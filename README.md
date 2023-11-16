@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Responsive ??
+  Surface ??
  
 </details>
 
@@ -38,15 +38,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
   Werk 2 verschillende pagina's van een website uit met 'nette' vanilla HTML, CSS en JS.
-  De link van de website die ik ga nabootsen: https://www.apple.com/nl/
+  De link van de website die ik ga nabootsen: https://www.ticketmaster.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home screen 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/desktop_homescreen.jpg" width="375px" alt="home pagina van ticketmaster">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Artiest  
+  <img src="readme-images/desktop_artiest.jpg" width="375px" alt="inhoudelijke informatie over de artiest en het evenement">
  
 </details>
 
