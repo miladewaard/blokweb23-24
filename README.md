@@ -13,7 +13,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Intro</summary>
 
   ### Auteur:
   Mila de Waard
@@ -33,12 +33,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Ticketmaster</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  Werk 2 verschillende pagina's van een website uit met 'nette' vanilla HTML, CSS en JS.
-  De link van de website die ik ga nabootsen: https://www.ticketmaster.nl
+  De opdracht is het uitwerken van twee verschillende pagina's van een website met 'nette' vanilla HTML, CSS en Javascript.
+  Mijn gekozen website is Ticketmaster. Link: https://www.ticketmaster.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home screen 
