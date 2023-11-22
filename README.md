@@ -51,7 +51,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 1 - Typografie & kleur
 
-<details>
+<details open>
   <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt. 
 
   CCS custom property is een tool die ervoor zorgt dat een waarden die herhaaldelijk voorkomt in één keer aangepast kunt worden door de waarden op één plek te definiëren en te kunnen wijzigen.
@@ -64,12 +64,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 	  color : var(--merk-kleur);
   }
   </summary>
+</details>
 
 
 
 ## Week 2 - Toegankelijkheid + Breakdownschets
 
-<details>
+<details open>
   <summary>In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
 
   Na het symposium is mijn besef over toegankelijkheid veel groter geworden en begrijp ik beter waarom en voor wie ik een website ga ontwerpen. 
@@ -78,6 +79,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook hebben we uitleg gekregen over het gebruik van grid en hiermee geoefend. 
   Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
+  
   <img src="readme-images/grid.png" width="375px" alt="grid uitleg">
   </summary>
 </details>
@@ -85,7 +87,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -96,7 +98,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets
 
-<details>
+<details open>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
@@ -114,7 +116,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 3 - Flexbox + Voortgang 1
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -122,7 +124,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -153,7 +155,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 4 - JS 3-stap
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -162,7 +164,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 5 - Positioneren + Voortgang 2
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -170,7 +172,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -200,7 +202,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 6 - Animeren
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -209,7 +211,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 7 - States + Voortgang 3
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -217,7 +219,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -248,7 +250,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 8 - Toegankelijkheid
 
-<details>
+<details open>
   <summary>
   </summary>
 </details>
@@ -256,19 +258,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 2/2
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-</details> -->
+</details>
 
 
 
 ## Week 9 - Eindgesprek
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
