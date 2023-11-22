@@ -88,7 +88,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2
 
 <details open>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary></summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
@@ -99,7 +99,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets
 
 <details open>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary></summary>
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
@@ -125,7 +125,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1
 
 <details open>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+  <summary>u</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -173,7 +173,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2
 
 <details open>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  <summary></summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -220,7 +220,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 3
 
 <details open>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  <summary></summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -259,7 +259,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 2/2
 
 <details open>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <summary></summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
@@ -271,7 +271,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 9 - Eindgesprek
 
 <details open>
-  <summary>uitwerken voor eindgesprek</summary>
+  <summary></summary>
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
