@@ -81,6 +81,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
   
   <img src="readme-images/grid.png" width="375px" alt="grid uitleg">
+
+  Verder kregen we kort uitleg over media query, dit is een tool om de workflow te verbeteren. Bijvoorbeeld: 
+
+  @media (width > 48 em) {
+	p {
+	 column-count: 2;
+	 column-gap: 2em;
+	}
+
+  Als de media width groter wordt dan 48em dan komen de paragrafen in 2 kolommen te staan.
   </summary>
 </details>
 
@@ -125,7 +135,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1
 
 <details open>
-  <summary>u</summary>
+  <summary></summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
