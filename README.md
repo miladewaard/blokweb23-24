@@ -28,8 +28,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Je website
 
 <details open>
@@ -51,7 +49,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Toegankelijkheidstest 1/2 (week 1)
+## Week 1 - Typografie & kleur
+
+<details>
+  <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt. 
+
+  CCS custom property is een tool die ervoor zorgt dat een waarden die herhaaldelijk voorkomt in één keer aangepast kunt worden door de waarden op één plek te definiëren en te kunnen wijzigen.
+
+  :root {
+	  --merk-kleur: blue;
+  }
+
+  h1, h2, h3 {
+	  color : var(--merk-kleur);
+  }
+  </summary>
+
+
+
+## Week 2 - Toegankelijkheid + Breakdownschets
+
+<details>
+  <summary>In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
+
+  Na het symposium is mijn besef over toegankelijkheid veel groter geworden en begrijp ik beter waarom en voor wie ik een website ga ontwerpen. 
+
+  In de les hebben we uitleg gekregen over hoe je de toegankelijkheid van je website test door middel van een screenreading. De toegankelijkheid van een website is namelijk één van de belangrijkste richtlijnen voor het maken van een website.
+
+  Ook hebben we uitleg gekregen over het gebruik van grid en hiermee geoefend. 
+  Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
+  <img src="readme-images/grid.png" width="375px" alt="grid uitleg">
+  </summary>
+</details>
+
+
+## Toegankelijkheidstest 1/2
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
@@ -59,11 +91,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-</details>
+</details> 
 
 
-
-## Breakdownschets (week 1)
+## Breakdownschets
 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
@@ -81,9 +112,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+## Week 3 - Flexbox + Voortgang 1
+
+<details>
+  <summary>
+  </summary>
+</details>
 
 
-## Voortgang 1 (week 2)
+## Voortgang 1
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
@@ -114,9 +151,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+## Week 4 - JS 3-stap
+
+<details>
+  <summary>
+  </summary>
+</details>
 
 
-## Voortgang 2 (week 3)
+
+## Week 5 - Positioneren + Voortgang 2
+
+<details>
+  <summary>
+  </summary>
+</details>
+
+
+## Voortgang 2
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
@@ -142,28 +194,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - punt 2
   - nog een punt
 - ...
-
 </details>
 
 
 
-
-
-## Toegankelijkheidstest 2/2 (week 4)
+## Week 6 - Animeren
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  <summary>
+  </summary>
 </details>
 
 
 
+## Week 7 - States + Voortgang 3
+
+<details>
+  <summary>
+  </summary>
+</details>
 
 
-## Voortgang 3 (week 4)
+## Voortgang 3
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
@@ -194,9 +246,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+## Week 8 - Toegankelijkheid
+
+<details>
+  <summary>
+  </summary>
+</details>
 
 
-## Eindgesprek (week 5)
+## Toegankelijkheidstest 2/2
+
+<details>
+  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+
+  ### Bevindingen
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+</details> -->
+
+
+
+## Week 9 - Eindgesprek
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
@@ -216,8 +286,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
-
-
 
 
 
