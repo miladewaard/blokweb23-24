@@ -98,11 +98,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2
 
 <details open>
-  <summary></summary>
+  <summary>De toegankelijkheid van de website heb ik getest met de functie voice over (VO) en keyboard only (KO).</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
+  -	VO en KO wordt in het Nederlands gegeven, maar met een Engels accent.
+  -	De VO begint met “Link, doorgaan naar inhoud”, dit is niet zichtbaar. Bij de KO komt die wel tevoorschijn.
+  -	“Heading level 1, Ticketmaster” (h1) niet zichtbaar, maar wordt wel genoemd na de navigatie.
+  -	“Heading level 2, Highlights” (h2) niet zichtbaar, maar wordt wel genoemd na h1. 
+  -	Andere h2 koppen “Recent bekeken”, “Populair” en “Aanbevolen” zijn wel zichtbaar en worden ook genoemd.
+  -	Veel heading 3 (h3) gebruikt.
+  -	Veel links gebruikt. Bijna elke h3 is een link.
+  -	Met KO ga je per categorie door de website heen, de categorieën zijn: headings, links, form controls, landmarks, navigatie, characters, words en window spots. Je kiest zelf welk catergorie.
+  -	De h2 footer-navigatie is niet zichtbaar, maar met de KO wordt die heel minimaal getoond.
+  -	Je kunt met KO niet makkelijk naar een bepaald kopje, want dat moet je alle andere inhoudselementen met dezelfde functie langsgaan.
 </details> 
 
 
