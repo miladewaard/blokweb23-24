@@ -98,7 +98,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2
 
 <details open>
-  <summary>De toegankelijkheid van de website heb ik getest met de functie voice over (VO) en keyboard only (KO).</summary>
+  <summary>De toegankelijkheid van de website heb ik getest met de functie voice over (VO) en keyboard only (KO). Daarnaast is er de Web Content Accessibility Guidelines (WCAG) dit is een document met richtlijnen om te voldoen aan de toegankelijkheid van een website. Echter als deze richtlijnen allemaal zijn behaald betekent het nog steeds niet dat je website volledig toegankelijk is, de gebruiker speelt ook nog een essentiële rol..</summary>
 
   ### Bevindingen
   -	VO en KO wordt in het Nederlands gegeven, maar met een Engels accent.
@@ -111,21 +111,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -	Met KO ga je per categorie door de website heen, de categorieën zijn: headings, links, form controls, landmarks, navigatie, characters, words en window spots. Je kiest zelf welk catergorie.
   -	De h2 footer-navigatie is niet zichtbaar, maar met de KO wordt die heel minimaal getoond.
   -	Je kunt met KO niet makkelijk naar een bepaald kopje, want dat moet je alle andere inhoudselementen met dezelfde functie langsgaan.
+  - Geen paragrafen (p) gebruikt ??
+
+  ### Web Content Accessibilty Guidelines (WCAG)
+  Moet nog tekst komen.
 </details> 
 
 
 ## Breakdownschets
 
 <details open>
-  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waarvan de website is opgebouwd.</summary>
+  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd.</summary>
 
-  ### de hele pagina: 
+  ### De hele pagina: 
   <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### Dynamisch deel menu: 
   <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### Dynamisch deel footer: 
   <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
