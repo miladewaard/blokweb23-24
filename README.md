@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home screen 
-  <img src="readme-images/mobiel_homescreen.jpg" width="375px" alt="home pagina van ticketmaster">
+  <img src="readme-images/mobiel-homescreen.jpg" width="375px" alt="home pagina van ticketmaster">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Artiest  
-  <img src="readme-images/mobiel_artiest.jpg" width="375px" alt="inhoudelijke informatie over de artiest en het evenement">
+  <img src="readme-images/mobiel-artiest.jpg" width="375px" alt="inhoudelijke informatie over de artiest en het evenement">
  
 </details>
 
@@ -117,16 +117,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets
 
 <details open>
-  <summary></summary>
+  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waarvan de website is opgebouwd.</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
