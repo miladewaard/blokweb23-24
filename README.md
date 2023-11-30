@@ -135,8 +135,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
   ### De hele artiest(en) pagina: 
-  <img src="readme-images/breakdownschets-artietstpagina.jpg" width="375px" alt="breakdown van de hele pagina">
-
+  <img src="readme-images/breakdownschets-artiestpagina.jpg" width="375px" alt="breakdown van de hele pagina">
 </details>
 
 
