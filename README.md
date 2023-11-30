@@ -103,15 +103,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   -	VO en KO wordt in het Nederlands gegeven, maar met een Engels accent.
   -	De VO begint met “Link, doorgaan naar inhoud”, dit is niet zichtbaar. Bij de KO komt die wel tevoorschijn.
+  -	Inlog/registreren wordt volgens de VO en KO als button gekemerkt, maar het hoort een link te zijn, want je gaat naar een andere pagina.
+  -	H1 is het beeldmerk en geen titel op de home pagina. Op de artiesten pagina is er wel een H1 titel en is het beeldmerk alleen een link.
   -	“Heading level 1, Ticketmaster” (h1) niet zichtbaar, maar wordt wel genoemd na de navigatie.
   -	“Heading level 2, Highlights” (h2) niet zichtbaar, maar wordt wel genoemd na h1. 
   -	Andere h2 koppen “Recent bekeken”, “Populair” en “Aanbevolen” zijn wel zichtbaar en worden ook genoemd.
   -	Veel heading 3 (h3) gebruikt.
   -	Veel links gebruikt. Bijna elke h3 is een link.
-  -	Met KO ga je per categorie door de website heen, de categorieën zijn: headings, links, form controls, landmarks, navigatie, characters, words en window spots. Je kiest zelf welk catergorie.
-  -	De h2 footer-navigatie is niet zichtbaar, maar met de KO wordt die heel minimaal getoond.
+  -	De h2 footer-navigatie is niet zichtbaar, maar met de KO wordt die heel minimaal getoond. 
   -	Je kunt met KO niet makkelijk naar een bepaald kopje, want dat moet je alle andere inhoudselementen met dezelfde functie langsgaan.
-  - Geen paragrafen (p) gebruikt ??
+  -	De VO en KO laten geen paragrafen (p) zien.
+
 
   ### Web Content Accessibilty Guidelines (WCAG)
   Moet nog tekst komen.
@@ -121,9 +123,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets
 
 <details open>
-  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd.</summary>
+  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd. *Dit zijn de breakdownschetsen tot nu toe!</summary>
 
-  ### De hele pagina: 
+  ### De hele home pagina: 
   <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### Dynamisch deel menu: 
@@ -132,6 +134,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dynamisch deel footer: 
   <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
+  ### De hele artiest(en) pagina: 
+  <img src="readme-images/breakdownschets-artietstpagina.jpg" width="375px" alt="breakdown van de hele pagina">
+
 </details>
 
 
@@ -139,7 +144,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 3 - Flexbox + Voortgang 1
 
 <details open>
-  <summary>
+  <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item).
   </summary>
 </details>
 
