@@ -146,11 +146,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item). Bijvoorbeeld:
 
   HTML
-  <main>
-    <article>Eerste item</article>
-    <article>Tweede item</article>
-    <article>Derde item</article>
-  </main>
+    main
+      article>Eerste item /article
+      article>Tweede item /article
+      article>Derde item /article
+    /main
 
   CSS
   main {
@@ -163,11 +163,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook heb ik vanuit de flexbox presentatie uitleg gekregen hoe je een combinatie van een foto en een tekst een link kan maken in html.
 
-  <a href= “#”>
-	  <h3></h3>
-	  <h4></h4>
-	  <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
-  </a>
+    a href= “#”
+	    <h3></h3>
+	    <h4></h4>
+	    <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
+   /a
   </summary>
 </details>
 
@@ -178,7 +178,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>Het voortgangsgesprek ging vooral over de breakdownschets. De student-assistent heeft mijn vragen kunnen beantwoorden, waardoor ik als gevolg een start kon maken aan het schrijven van mijn code.</summary>
 
   ### Stand van zaken
-  Het enige wat ik had gedaan qua html-code was een begin aan de navigatie.
+  Wat ik qua HTML had gedaan was een begin aan de navigatie.
   <img src="readme-images/header-nav-eerste-begin.png" width="375px" alt="Mijn eerste html begin van de navigatie in de header.">
 
   <summary> Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik zo veel mogelijk alle inhoud voor de body verzameld en erin gezet.</summary>
