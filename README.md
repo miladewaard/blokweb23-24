@@ -143,7 +143,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 3 - Flexbox + Voortgang 1
 
 <details open>
-  <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item).
+  <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item). Bijvoorbeeld:
+
+  HTML
+  <main>
+    <article>Eerste item</article>
+    <article>Tweede item</article>
+    <article>Derde item</article>
+  </main>
+
+  CSS
+  main {
+ 	  display: flex;
+  }
+
+  article {
+  flex-grow: 1;
+  }
+
+  Ook heb ik vanuit de flexbox presentatie uitleg gekregen hoe je een combinatie van een foto en een tekst een link kan maken in html.
+
+  <a href= “#”>
+	  <h3></h3>
+	  <h4></h4>
+	  <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
+  </a>
   </summary>
 </details>
 
@@ -151,29 +175,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1
 
 <details open>
-  <summary></summary>
+  <summary>Het voortgangsgesprek ging vooral over de breakdownschets. De student-assistent heeft mijn vragen kunnen beantwoorden, waardoor ik als gevolg een start kon maken aan het schrijven van mijn code.</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het enige wat ik had gedaan qua html-code was een begin aan de navigatie.
+  <img src="readme-images/header-nav-eerste-begin.png" width="375px" alt="Mijn eerste html begin van de navigatie in de header.">
 
+  <summary> Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik zo veel mogelijk alle inhoud voor de body verzameld en erin gezet.</summary>
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  <img src="readme-images/header-nav1.png" width="375px" alt="Eerste code over de navigatie en met name de search bar.">
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+<summary> PROCES NOG VERDER UITWERKEM! STAAT IN OOK IN EEN WORD DOCUMENT!</summary>
 
 </details>
 
@@ -182,8 +194,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 4 - JS 3-stap
 
 <details open>
-  <summary>
+  <summary>Deze week ging over JavaScript. JavaScript helpt om nog efficiënter code te schrijven en om html-elementen met elkaar te laten werken.
+  Door middel van document object model (DOM) refereer je naar het html-element. En om de CSS erbij te betrekken doe je dat met de document.querySelector in de JS, die selecteert het overeenkomende element uit de CSS. Daarnaast kun je met de add.Eventlistener een functie laten uitvoeren. Als laatst kun je dit controleren in de console van een browser, die kijkt voor eventuele fouten. Voorbeeld:
   </summary>
+
+   <img src="readme-images/js.jpg" width="375px" alt="Screenshot van uitleg over JavaScript">
 </details>
 
 
@@ -191,7 +206,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 5 - Positioneren + Voortgang 2
 
 <details open>
-  <summary>
+  <summary> NOG UITWERKEN, NOTES STAAN IN EEN WORD DOCUMENT
   </summary>
 </details>
 

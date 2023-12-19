@@ -6,73 +6,287 @@
 	<meta name="author" content="Mila">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Ticketmaster Homepage</title>
+	<title>Ticketmaster 🎫 Home pagina</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/beeldmerk.png">
 </head>
 
 <body>
 	<header>
-		<!--logo-->
-		<h1>Ticketmaster</h1>
-		
-		<nav>
-			<!--searchbalk-->
+		<!--logo/name-->
+		<h1><a href=""><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></a></h1>
+		<!--Mag een h1 in een ul? Omdat het logo naast de navigiatie staat?-->
 
-			<ol>
-				<li> <a class="active" alt="Home">Home</a></li>
-				<li> <a href="#" alt="Comedy">Comedy</a></li>
+		<!--navigatie-->
+		<nav>
+			<!--nav als hamburger menu maken-->
+			<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
+
+			<ul>
+				<li> <a class="active" href="#" alt="Comedy">Comedy</a></li>
 				<li> <a href="#" alt="Sport">Sport</a></li>
 				<li> <a href="#" alt="Festivals">Festivals</a></li>
 				<li> <a href="#" alt="Familie">Familie</a></li>
-				<li> <a href="#" alt="Meer">Meer</a></li>
-			</ol>
+				<!--Wanneer kies je bij button type= voor submit of button? Is daar nog groot verschil in? -->
+				<li> <button type="button">Meer</button></li>
+				<!--login/registreer item-->
+				<li> <button type="button"><svg viewBox="0 0 24 24" width="24px" height="24px" aria-hidden="true" focusable="false" class="BaseSvg-sc-yh8lnd-0 UserIcon___StyledBaseSvg-sc-16rhua7-0 ckLyyv"><path d="M8 6.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM12 1a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm6.49 12H5.43L1 16.9V23h22v-6.12L18.49 13ZM2.5 17.58 6 14.5h11.93l3.57 3.07v3.93h-19v-3.92Z"></path></svg></button>Login/registreer</li>
+				<!--het zoek-formulier-->
+				<li> <form role="search" action="#">
+						<input type="search" id="search" placeholder="Zoek op artiest, evenemengt of locatie" autocomplete="off" aria-label="zoeken">
+						<button type="submit"><svg class="BaseSvg-sc-yh8lnd-0 MagnifyingGlassIcon___StyledBaseSvg-sc-1pooy9n-0 ckLyyv sc-12ebniq-5 dRCicm" viewBox="0 0 23 24" width="1em" height="1em" aria-hidden="true" focusable="false"><path d="M3.78 4.78 1.62 10l2.16 5.22L9 17.38l5.22-2.16L16.38 10l-2.16-5.22L9 2.62 3.78 4.78ZM9 1l6.36 2.64L18 10l-2.33 5.61 6.11 6.11-1.06 1.06-6.1-6.1L9 19l-6.36-2.64L0 10l2.64-6.36L9 1Z"></path></svg></button>
+					 </form></li>
+			</ul>
 		</nav>
 
-		<!--<h2>Highlights</h2> onzichtbaar maken-->
-
-		<h3>The Smile</h3>
-	
+		<section>
+			<h2><img src="images/tom-odell.jpg" alt="Afbeelding van Tom Odell"></h2>
+			<h3>Tom Odell</h3>
+		</section>
 	</header>
 
 
 	<main>
-		<!--<h1>Welkom bij Ticketmaster.nl</h1> onzichtbaar maken-->
-
-		<section>	
-			<ul>
-				<li><a href="">TOOL</a></li>
-				<li><a href="">Kerstcircus Ahoy</a></li>
-				<li><a href="">Wooning Zesdaagse</a></li>
-				<li><a href="">Holocene</a></li>
+		<section>
+			<h2 lang="en" class="sr-only">Highlights</h2>
+			<!--h2 highlights onzichtbaar-->
+		
+			<ul>		
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/pinkpop-tickets/109963">
+						<h3>Pinkpop</h3>
+						<p>Festival</p>
+						<img src="images/pinkpop.jpg" alt="Afbeelding van Pinkpop Festival met de datum eenentwintig, tweeëntwintig em drieëntwintig juni tweeduizend vierentwintig in Megaland, Landgraaf"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/kerstcircus-ahoy-tickets/871503">
+						<h3>Kerstcircus Ahoy</h3>
+						<p>Familie</p>
+						<img src="images/kerstcircus-ahoy.jpg" alt="Afbeelding van Kerstcircus Ahoy"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/down-the-rabbit-hole-tickets/935065">
+						<h3>Down The Rabbit Hole</h3>
+						<p>Festival</p>
+						<img src="images/dtrh.jpg" alt="Afbeelding van Down The Rabbit Hole Festival"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/zara-larsson-tickets/930224">
+						<h3>Zara Larsson</h3>
+						<p>Muziek</p>
+						<img src="images/zara-larsson.jpg" alt="Afbeelding van Zara Larsson"/>
+					</a>		
+				</li>
 			</ul>
 		</section>
 
 		<section>	
 			<h2>RECENT BEKEKEN</h2>
+
+			<ul>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/green-day-tickets/2686">
+						<button type="submit">Green Day</button>
+					</form>
+				</li>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/zara-larsson-tickets/930224">
+						<button type="submit">Zara Larsson</button>
+					 </form>
+				</li>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/pinkpop-tickets/109963">
+						<button type="submit">Pinkpop</button>
+					</form>
+				</li>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/tom-odell-tickets/912725">
+						<button type="submit">Tom Odell</button>
+					</form>
+				</li>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/p-nk-tickets/8177">
+						<button type="submit">P!NK</button>
+					</form>
+				</li>
+				<li>
+					<form action="https://www.ticketmaster.nl/artist/jean-paul-gaultier-s-fashion-freak-show-tickets/1150094">
+						<button type="submit">Jean Paul Gaultier's Fashion Freak Show</button>
+					</form>
+				</li>
+				<li>
+					<form action="">
+						<button type="submit">Toon meer</button>
+					 </form>
+				</li>
+			</ul>
 		</section>
+
+		<!--Advertentie-->
 
 		<section>	
 			<h2>POPULAIR</h2>
+
+			<ul>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/p-nk-tickets/8177">
+						<h3>P!NK</h3>
+						<p>Muziek</p>
+						<img src="images/pink.jpg" alt="Afbeelding van Pink"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/down-the-rabbit-hole-tickets/935065">
+						<h3>Down The Rabbit Hole</h3>
+						<p>Festival</p>
+						<img src="images/downtherabbithole.jpg" alt="Afbeelding van Down The Rabbit Hole"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/jason-derulo-tickets/331003">
+						<h3>Jason Derulo</h3>
+						<p>Muziek</p>
+						<img src="images/jaosn-derulo.jpg" alt="Afbeelding van Jason Derulo"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/editors-tickets/27994">
+						<h3>Editors</h3>
+						<p>Muziek</p>
+						<img src="images/editors.jpg" alt="Afbeelding van de Editors"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/kerstcircus-ahoy-tickets/871503">
+						<h3>Kerstcircus Ahoy</h3>
+						<p>Familie</p>
+						<img src="images/kerstcircus-ahoy.jpg" alt="Afbeelding van Kerstcircus Ahoy met de datum vijfentwintig tot en met eenendertig december tweeduizend drieëntwintig"/>
+					</a>	
+				</li>
+			</ul>
 		</section>
 
 		<section>	
 			<h2>AANBEVOLEN</h2>
 			
 			<ul>
-				<li><a href="">Ali Gatie</a></li>
-				<li><a href="">Thirty Seconds To Mars</a></li>
-				<li><a href="">The Masked Singer Live</a></li>
-				<li><a href="">Green Day</a></li>
-				<li><a href="">Sue The Night</a></li>
-				<li><a href="">IVE</a></li>
+				<li>
+					<a href="https://www.ticketmaster.nl/feature/cadeautips/?int_cmp_name=Cadeautips-[NL]&int_cmp_id=NL-Home-611&int_cmp_creative=Home-discover-1&tm_link=tm_ccp_Home_discover_Cadeautips-[NL]">
+						<h3>Cadeautips</h3>
+						<p>Tips</p>
+						<p>Geef jij het cadeau waar nog jaren over nagepraat wordt? Check onze cadeautips!</p>
+						<p>TICKETS</p>
+						<img src="images/cadeau-tips.jpg" alt="Afbeelding over de cadeautips met de tekst: Geef een onvergetelijk cadeau."/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/jo-koy-tickets/345353">
+						<h3>Jo Koy</h3>
+						<p>Comedy</p>
+						<p>Op 21 mei 2024 komt de Amerikaanse comedian naar RTM Stage, Rotterdam Ahoy!</p>
+						<p>TICKETS</p>
+						<img src="images/jo-koy.jpg" alt="Afbeelding van Jo Koy"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/derek-ogilvie-tickets/984308">
+						<h3>Derek Ogilvie</h3>
+						<p>Theater & Cultuur</p>
+						<p>Ervaar 'Up Close and Personal' van 23 februari t/m 6 april. Een intiem en adembenemend evenement in een dynamische setting met maar rond de 6.</p>
+						<p>TICKETS</p>
+						<img src="images/derek-ogilvie.jpg" alt="Afbeelding van Derek Ogilvie"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/five-finger-death-punch-tickets/41675">
+						<h3>Five Finger Death Punch</h3>
+						<p>Muziek</p>
+						<p>De Amerikaanse hardrockband speelt op 19 juni 2024 in AFAS Live met special guest Ice Nine Killsr</p>
+						<p>TICKETS</p>
+						<img src="images/five-finger-death-punch.jpg" alt="Afbeelding van Five Finger Death Punch"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/karol-g-tickets/988809">
+						<h3>Karol G</h3>
+						<p>Muziek</p>
+						<p>De Latin-superster speelt op 14 juni 2024 met haar Mañana Será Bonito Tour in Ziggo Dome</p>
+						<p>TICKETS</p>
+						<img src="images/karol-g.jpg" alt="Afbeelding van Karol G"/>
+					</a>	
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/artist/nicki-minaj-tickets/337593">
+						<h3>Nicki Minaj</h3>
+						<p>Muziek</p>
+						<p>De <span lang="en">'Queen of Rap'</span> staat op 2 juni 2024 in Ziggo Dome met haar Pink Friday 2 Tour</p>
+						<p>TICKETS</p>
+						<img src="images/nicki-minaj.jpg" alt="Afbeelding van Nicki Minaj"/>
+					</a>	
+				</li>
 			</ul>
 
+			<!--Welk html element zijn de 'kopjes' onder de foto en de link "TICKETS"?-->
+			<!--Hoe zorg je dat de Engelse woorden door de VO in het Engels worden uitgesproken? KIJK Nicki Minaj stukje--> 
 		</section>
 
+		<!--Advertentie-->
+
+		<section>	
+			<h2>UITGELICHT</h2>
+			
+			<ul>
+				<li>
+					<a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/">
+						<h3>Doorverkooptickets</h3>
+						<img src="images/doorverkooptickets.jpg" alt="Afbeelding over de doorverkooptickets"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/feature/cadeaukaart/">
+						<h3>Cadeaukaart</h3>
+						<img src="images/cadeaukaart.jpg" alt="Afbeelding over de cadeaukaart"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/feature/parkeren/?language=nl-nl">
+						<h3>Parkeertickets</h3>
+						<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
+					</a>		
+				</li>
+				<li>
+					<a href="https://www.ticketmaster.nl/feature/alpine/">
+						<h3>Bescherm je gehoor</h3>
+						<img src="images/alpine.jpg" alt="Afbeelding van Alpine over je gehoor beschermen"/>
+					</a>		
+				</li>
+			</ul>
+		</section>
 	</main>
+	
+	
+	<footer>
+		<img src="images/logo-white.png" alt="Beeldmerk"> <!--kleur foto  wijzigen-->
+
+		<h3>Volg ons</h3>
+			<!--<li><a href="#">
+					<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
+				</a>	
+			</li>-->
 		
+		<h3>Download onze Apps</h3>
+			<!--<li><a href="#">
+					<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
+				</a>	
+			</li>-->
+
+	
+		
+	</footer>
 
 		<script defer src="scripts/script.js"></script>
 </body>

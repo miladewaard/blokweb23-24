@@ -2,7 +2,8 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;  
+  font-family: 'Averta';
 }
 
 
@@ -15,11 +16,51 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-main: #f6f6f6;
+	--color-second: #024ddf;
+	--color-third: #121212;
+
+	--color-text:var(--color-third);
+	--color-text-second: #ffffff;
+	--color-text-third: #b3b3b3;
+	--color-text-fourth:var(--color-second);
+
+	--color-background:var(--color-main);
+	--color-header-background:var(--color-second);
+	--color-footer-background:var(--color-third);
+
+	--color-menu-background:var(--color-second);
+	--color-menu-item-text:var(--color-text-second);
+	--color-menu-item-background:var(--color-second);
+
+	/*--color-search-background:#7ba428;
+	--color-search-button-background:var(--color-main);*/
+
+	/*--color-h1:var(--color-main);
+	--color-h2:var(--color-third);*/
 }
 
 
+/*********************/
+/* CODE VOOR @FONT-FACE */
+/*********************/
+@font-face {
+	font-family: 'Averta';
+	src: url(../fonts/Averta-Regular.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Averta';
+	src: url(../fonts/Averta-Semibold.otf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Averta';
+	src: url(../fonts/Averta-Bold.otf);
+	font-weight: bold;
+}
 
 
 
@@ -28,4 +69,127 @@
 /****************/
 
 /* jouw code */
+header{
+	background-color: var(--color-header-background);
 
+	/*display: grid;
+	grid-template-columns: 1fr max-content;*/
+	/*Hoezo is grid niet nodig voor de header?*/
+}
+
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+}
+
+
+header ul{
+	/* om de navigatie te positioneren */
+	display:flex;
+	grid-template-columns:min-content min-content;
+	list-style: none;
+	/* justify-content: space-between; */
+	grid-gap: 3em;
+	align-items:center;
+	
+	font-weight:bold; 
+}
+
+header ul li:first-of-type{
+	margin-left: 20em;
+}
+header li:nth-of-type(7n+6){
+	margin-left: 25em;
+	display: flex;
+}
+header ul li:last-of-type{
+	margin-left: auto;
+	/*display: flex;
+	justify-content: end;*/
+}
+/*Waarom gaat de navigatie buiten het kader?*/
+
+header section h2 img{
+	display: grid;
+	width: 100%;
+}
+header section h3{
+	position: relative;
+	left: 1em;
+	bottom: 1em;
+}
+
+
+main{
+	background-color: var(--color-main);
+
+	/*display: grid;
+	grid-template-columns: 1fr 1fr;*/
+}
+
+main h2{
+	/*display: flex;
+	align-items: center;*/
+	display: grid;
+	place-content: center;
+	
+
+	font-weight:700;
+	color: var(--color-third);
+}
+main section ul li h3{
+	display: grid;
+	/*grid-row-start: 1;*/
+	/*grid-template-columns: 2fr 1fr 1fr;*/
+
+}
+/*Waarom werkt grid niet?*/
+/*Hoe benoem je de h3?*/
+
+main section ul{
+	margin: 1.5em;
+	padding: 1.5em;
+	list-style: none;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+/*Hoe zorg ik dat alleen de eerste ul dit grid heeft?*/
+
+
+
+footer{
+	background-color: var(--color-footer-background);
+	color:var(--color-text-second);
+}
+
+
+
+
+
+
+
+
+
+
+/*scrollbar toevoegen:
+overflow-x:auto;*/
+  /* om de kinderen te laten snappen */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type */
+  /*scroll-snap-type: x mandatory;*/
+  
+  /* om te voorkomen dat bij het einde van de ul de body gaat scrollen */
+  /* daarmee zou de 'back' of 'forward' functie geactiveerd worden */
+  /* en nu dus niet */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior */
+  /*overscroll-behavior: contain auto;*/
+  
+  /* voor de zwarte piste */
+  /* zelf googlen */
+  /*-webkit-overflow-scrolling: touch;*/
