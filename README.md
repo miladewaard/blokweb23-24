@@ -169,15 +169,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <summary> Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik zo veel mogelijk alle inhoud voor de body verzameld en erin gezet.</summary>
 
-  <summary>
-  Header
+  <summary>Header</summary>
   <img src="readme-images/header-nav1.png" width="375px" alt="Eerste code over de navigatie en met name de search bar.">
-  De search bar in de header geplaatst (Bron: 3)</summary>
+  <summary>De search bar in de header geplaatst (Bron: 3)</summary>
 
-  <summary>
-  Main
-  <img src="readme-images/main-aanbevolen1.jpg" width="375px" alt="Stukje code main over het kopje aanbevolen.">
-  Hier heb ik van een image en tekst één link kunnen maken. (Bron: presentatie over flexbox).</summary>
+  <summary>Main</summary>
+  <img src="readme-images/main-aanbevolen1.png" width="375px" alt="Stukje code main over het kopje aanbevolen.">
+  <summary>Hier heb ik van een image en tekst één link kunnen maken. (Bron: presentatie over flexbox).</summary>
 </details>
 
 
