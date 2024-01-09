@@ -15,15 +15,13 @@
 <body>
 	<header>
 		<!--logo/name-->
-		<h1><a href=""><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></a></h1>
+		<a href=""><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></a>
 		<!--Mag een h1 in een ul? Omdat het logo naast de navigiatie staat?-->
 
 		<!--navigatie-->
 		<nav>
-			<!--nav als hamburger menu maken-->
-			<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
-
 			<ul>
+				<!-- <li> <h1><a href=""><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></a></h1></li> -->
 				<li> <a class="active" href="#" alt="Comedy">Comedy</a></li>
 				<li> <a href="#" alt="Sport">Sport</a></li>
 				<li> <a href="#" alt="Festivals">Festivals</a></li>
@@ -32,6 +30,8 @@
 				<li> <button type="button">Meer</button></li>
 				<!--login/registreer item-->
 				<li> <button type="button"><svg viewBox="0 0 24 24" width="24px" height="24px" aria-hidden="true" focusable="false" class="BaseSvg-sc-yh8lnd-0 UserIcon___StyledBaseSvg-sc-16rhua7-0 ckLyyv"><path d="M8 6.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM12 1a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm6.49 12H5.43L1 16.9V23h22v-6.12L18.49 13ZM2.5 17.58 6 14.5h11.93l3.57 3.07v3.93h-19v-3.92Z"></path></svg></button>Login/registreer</li>
+				<!--hamburger menu-->
+				<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
 				<!--het zoek-formulier-->
 				<li> <form role="search" action="#">
 						<input type="search" id="search" placeholder="Zoek op artiest, evenemengt of locatie" autocomplete="off" aria-label="zoeken">
@@ -39,15 +39,15 @@
 					 </form></li>
 			</ul>
 		</nav>
-
-		<section>
-			<h2><img src="images/tom-odell.jpg" alt="Afbeelding van Tom Odell"></h2>
-			<h3>Tom Odell</h3>
-		</section>
 	</header>
 
 
 	<main>
+		<section>
+			<h2><img src="images/tom-odell.jpg" alt="Afbeelding van Tom Odell"></h2>
+			<h3>Tom Odell</h3>
+		</section>
+
 		<section>
 			<h2 lang="en" class="sr-only">Highlights</h2>
 			<!--h2 highlights onzichtbaar-->
@@ -267,25 +267,57 @@
 			</ul>
 		</section>
 	</main>
+
+	<!--<aside></aside> is dit het juiste element om te gebruiken om elementen in de derde kolom te plaatsen-->
 	
 	
 	<footer>
 		<img src="images/logo-white.png" alt="Beeldmerk"> <!--kleur foto  wijzigen-->
 
-		<h3>Volg ons</h3>
+		<p>Volg ons</p>
+			<!-- <li><a href="#">
+					<img src="//uk.tmconst.com/production-10-18-0-6776761/images/logo/blog.svg" class="sc-15ttc56-4 hVomda">
+				</a>	
+			</li> -->
+		<p>Download onze Apps</p>
 			<!--<li><a href="#">
 					<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
 				</a>	
 			</li>-->
-		
-		<h3>Download onze Apps</h3>
-			<!--<li><a href="#">
-					<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
-				</a>	
-			</li>-->
+		<p>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="https://www.ticketmaster.nl/help/termsandconditions.html?language=nl-nl">voorwaarden voor gebruik</a></p>
 
-	
-		
+		<!-- <h3>Wij helpen je graag</h3> -->
+		<!-- <button data-toggle="collapse" data-target="#demo" aria-hidden="false">Wij helpen je graag</button> -->
+		<button aria-hidden="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
+			<ul>
+				<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
+				<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
+				<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/annuleringsverzekering/?language=nl-nl">Verzekering</a></li>
+			</ul>	
+		<h3>Wat wij ook hebben</h3>
+			<ul>
+				<li><a href="https://www.ticketmaster.nl/feature/collectorcard/?language=nl-nl">Collector Cards</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/alpine/">Gehoorbescherming</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/cadeaukaart/?language=nl-nl">Cadeaukaart</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/platinumtickets/?language=nl-nl">Platinum Tickets</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/?language=nl-nl">Doorverkoop</a></li>
+			</ul>	
+		<h3>Over ons</h3>
+			<ul>
+				<li><a href="#">Branding</a></li> 
+				<!-- De link naar "Branding" was een beveiligde link, dus die heb ik er niet in gezet.-->
+				<li><a href="https://www.ticketmaster.nl/feature/vacatures/?language=nl-nl">Vacatures</a></li>
+			</ul>	
+		<h3>Doe zaken met ons</h3>
+			<ul>
+				<li><a href="https://business.ticketmaster.nl/adverteren/">Adverteren</a></li>
+				<li><a href="https://www.ticketmaster.nl/feature/affiliates/?language=nl-nl">Affiliate worden</a></li>
+				<li><a href="https://business.ticketmaster.nl">Zelf een event organiseren</a></li>
+			</ul>
+			
+		<p>Ons Netwerk</p>
+		<!-- De p's in de footer worden bij inspecteren als h3 genoemd? -->
 	</footer>
 
 		<script defer src="scripts/script.js"></script>

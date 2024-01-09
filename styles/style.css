@@ -6,6 +6,10 @@
   font-family: 'Averta';
 }
 
+img {
+	width: 100%;
+}
+
 
 
 
@@ -67,15 +71,116 @@
 /****************/
 /* JOUW STYLING */
 /****************/
-
 /* jouw code */
+body {
+	display: grid;
+	/* grid-template-columns: 1fr 20rem; */
+	grid-template-columns: 2fr 1fr;
+}
+
+body > header,
+body > footer {
+	grid-column: span 2;
+}
+
+header h1 img,
+footer img {
+	width: 20rem;
+}
+
 header{
 	background-color: var(--color-header-background);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 
 	/*display: grid;
 	grid-template-columns: 1fr max-content;*/
 	/*Hoezo is grid niet nodig voor de header?*/
 }
+
+/* logo/name te positioneren */
+header > a{
+	display: block;
+	width: 15em;
+	height: 4em;
+	padding: 1em 1em 1em 1em;
+}
+header > a:hover{
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	/* padding: 1.5em 1.5em 1.5em 1.5em; */
+}
+
+/* navigatie stylen */
+header nav{
+	background-color: var(--color-header-background);
+
+	flex-grow: 1;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-items: center;
+
+	display: flex;
+	gap: 2em;
+
+	font-weight: 700;
+}
+header nav li{
+	flex-grow: 3;
+	min-width: 4em;
+	/* wat betekent flex-grow en mid-width? */
+}
+/* header ul{
+	
+	display:flex;
+	grid-template-columns:min-content min-content;
+	list-style: none;
+
+	grid-gap: 2em;
+	align-items:center;
+	
+	font-weight:bold; 
+} */
+header ul li:nth-of-type(1){
+	display: flex;
+	justify-content: start;
+}
+/* header ul li:nth-of-type(6){
+	display: flex;
+
+} */
+/* header ul li:nth-of-type(7){
+	display: flex;
+	justify-content: flex-end;
+} */
+header ul li:nth-of-type(7){
+	margin-left: auto;
+}
+header ul li:last-of-type{
+	/* margin-left: auto; */
+	display: flex;
+	justify-content: end;
+}
+
+header nav a{
+	color:var(--color-text-second);
+	text-decoration: none;
+}
+
+
+header section h2 img{
+	display: grid;
+	width: 100%;
+}
+/* header section h3{
+	position: relative;
+	left: 1em;
+	bottom: 1em;
+}*/
+
 
 .sr-only:not(:focus):not(:active) {
 	clip: rect(0 0 0 0); 
@@ -85,43 +190,6 @@ header{
 	position: absolute;
 	white-space: nowrap; 
 	width: 1px;
-}
-
-
-header ul{
-	/* om de navigatie te positioneren */
-	display:flex;
-	grid-template-columns:min-content min-content;
-	list-style: none;
-	/* justify-content: space-between; */
-	grid-gap: 3em;
-	align-items:center;
-	
-	font-weight:bold; 
-}
-
-header ul li:first-of-type{
-	margin-left: 20em;
-}
-header li:nth-of-type(7n+6){
-	margin-left: 25em;
-	display: flex;
-}
-header ul li:last-of-type{
-	margin-left: auto;
-	/*display: flex;
-	justify-content: end;*/
-}
-/*Waarom gaat de navigatie buiten het kader?*/
-
-header section h2 img{
-	display: grid;
-	width: 100%;
-}
-header section h3{
-	position: relative;
-	left: 1em;
-	bottom: 1em;
 }
 
 
@@ -142,10 +210,10 @@ main h2{
 	font-weight:700;
 	color: var(--color-third);
 }
-main section ul li h3{
+main section ul {
 	display: grid;
 	/*grid-row-start: 1;*/
-	/*grid-template-columns: 2fr 1fr 1fr;*/
+	grid-template-columns: 2fr 1fr 1fr;
 
 }
 /*Waarom werkt grid niet?*/

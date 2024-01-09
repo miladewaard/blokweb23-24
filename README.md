@@ -145,21 +145,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item). Bijvoorbeeld:
 
-  HTML
-    main
-      article>Eerste item /article
-      article>Tweede item /article
-      article>Derde item /article
-    /main
-
-  CSS
-  main {
- 	  display: flex;
-  }
-
-  article {
-  flex-grow: 1;
-  }
+  <img src="readme-images/flexbox-uitleg.png" width="375px" alt="Code voor om flexbox toe te passens">
 
   Ook heb ik vanuit de flexbox presentatie uitleg gekregen hoe je een combinatie van een foto en een tekst een link kan maken in html.
 
@@ -167,7 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 	    <h3></h3>
 	    <h4></h4>
 	    <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
-   /a
+    /a
   </summary>
 </details>
 
@@ -183,10 +169,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <summary> Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik zo veel mogelijk alle inhoud voor de body verzameld en erin gezet.</summary>
 
+  <summary>
+  Header
   <img src="readme-images/header-nav1.png" width="375px" alt="Eerste code over de navigatie en met name de search bar.">
+  De search bar in de header geplaatst (Bron: 3)</summary>
 
-<summary> PROCES NOG VERDER UITWERKEM! STAAT IN OOK IN EEN WORD DOCUMENT!</summary>
-
+  <summary>
+  Main
+  <img src="readme-images/main-aanbevolen1.jpg" width="375px" alt="Stukje code main over het kopje aanbevolen.">
+  Hier heb ik van een image en tekst één link kunnen maken. (Bron: presentatie over flexbox).</summary>
 </details>
 
 
@@ -198,7 +189,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Door middel van document object model (DOM) refereer je naar het html-element. En om de CSS erbij te betrekken doe je dat met de document.querySelector in de JS, die selecteert het overeenkomende element uit de CSS. Daarnaast kun je met de add.Eventlistener een functie laten uitvoeren. Als laatst kun je dit controleren in de console van een browser, die kijkt voor eventuele fouten. Voorbeeld:
   </summary>
 
-   <img src="readme-images/js.jpg" width="375px" alt="Screenshot van uitleg over JavaScript">
+  <img src="readme-images/js.jpg" width="375px" alt="Screenshot van uitleg over JavaScript"><summary>Bron: 1</summary>
 </details>
 
 
@@ -206,7 +197,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 5 - Positioneren + Voortgang 2
 
 <details open>
-  <summary> NOG UITWERKEN, NOTES STAAN IN EEN WORD DOCUMENT
+  <summary>Deze les ging over positioneren. Met positioneren wil je een element op een specifieke plek in een parent of in een scherm zetten. Er zijn 5 flavours of position:
+
+  -	Position: static
+    De standaard waarde voor positioneren en wordt gebaseerd op de plaats in de html door top, right, bottom, left. Ook wel flow lay-out genoemd.
+  -	Position: relative
+    Behoudt een element in de flow.
+  -	Position: absolute
   </summary>
 </details>
 
