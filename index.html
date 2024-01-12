@@ -17,6 +17,7 @@
 		<!--hamburger menu-->
 		<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
 		<!-- hamburger menu als eerste, zodat die helemaal links staat. Ook mag die niet in de nav omdat die het moet uiutklappen -->
+		<!-- span omdat de tekst niet zichtbaar mag zijn op desktop device -->
 
 		<!--logo/name-->
 		<a href=""><h1><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></h1></a>
@@ -42,7 +43,7 @@
 		<form role="search" action="#">
 			<input type="search" id="search" placeholder="Zoek op artiest, evenement of locatie" autocomplete="off" aria-label="zoeken">
 			<button type="submit"><svg class="BaseSvg-sc-yh8lnd-0 MagnifyingGlassIcon___StyledBaseSvg-sc-1pooy9n-0 ckLyyv sc-12ebniq-5 dRCicm" viewBox="0 0 23 24" width="1em" height="1em" aria-hidden="true" focusable="false"><path d="M3.78 4.78 1.62 10l2.16 5.22L9 17.38l5.22-2.16L16.38 10l-2.16-5.22L9 2.62 3.78 4.78ZM9 1l6.36 2.64L18 10l-2.33 5.61 6.11 6.11-1.06 1.06-6.1-6.1L9 19l-6.36-2.64L0 10l2.64-6.36L9 1Z"></path></svg></button>
-		 </form>
+		</form>
 		<!-- login en zoek formulier buiten de nav, want moet zichtbaar zijn als het hamburger menu is ingeklapt. -->
 	</header>
 
@@ -164,7 +165,7 @@
 			</ul>
 		</section>
 
-		<section>	
+		<section class="aanbevolen-events">	
 			<h2>AANBEVOLEN</h2>
 			
 			<ul>
@@ -230,7 +231,7 @@
 
 		<!--Advertentie-->
 
-		<section>	
+		<section class="uitgelicht-events">	
 			<h2>UITGELICHT</h2>
 			
 			<ul>
@@ -269,15 +270,41 @@
 		<img src="images/logo-white.png" alt="Beeldmerk"> <!--kleur foto  wijzigen-->
 
 		<p>Volg ons</p>
-			<!-- <li><a href="#">
-					<img src="//uk.tmconst.com/production-10-18-0-6776761/images/logo/blog.svg" class="sc-15ttc56-4 hVomda">
+			<li><a href="#">
+				<img src="images/blog.svg" alt="Blog app"/>
 				</a>	
-			</li> -->
+			</li>
+			<li><a href="#">
+				<img src="images/facebook.svg" alt="Facebook app"/>
+				</a>	
+			</li>
+			<li><a href="#">
+				<img src="images/twitter.svg" alt="Twitter app"/>
+				</a>	
+			</li>
+			<li><a href="#">
+				<img src="images/instagram.svg" alt="Instagram app"/>
+				</a>	
+			</li>
+			<li><a href="#">
+				<img src="images/linkedin.svg" alt="Linkedin app"/>
+				</a>	
+			</li>
+			<li><a href="#">
+				<img src="images/tiktok.svg" alt="Tiktok app"/>
+				</a>	
+			</li>
+
 		<p>Download onze Apps</p>
-			<!--<li><a href="#">
-					<img src="images/parkeertickets.jpg" alt="Afbeelding over de Parkeertickets"/>
+			<li><a href="#">
+				<img src="images/appstore.svg" alt="App Store app"/>
 				</a>	
-			</li>-->
+			</li>
+			<li><a href="#">
+				<img src="images/googleplay.svg" alt="Google play app"/>
+				</a>	
+			</li>
+
 		<p>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="https://www.ticketmaster.nl/help/termsandconditions.html?language=nl-nl">voorwaarden voor gebruik</a></p>
 
 		<!-- <h3>Wij helpen je graag</h3> -->
@@ -311,6 +338,15 @@
 			</ul>
 			
 		<p>Ons Netwerk</p>
+		<li><a href="#">
+			<img src="images/mojo.svg" alt="Mojo netwerk"/>
+			</a>	
+		</li>	
+		<li><a href="#">
+			<img src="images/livenation.svg" alt="Live nation netwerk"/>
+			</a>	
+		</li>
+
 		<!-- De p's in de footer worden bij inspecteren als h3 genoemd? -->
 	</footer>
 

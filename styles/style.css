@@ -42,7 +42,7 @@ img {
 	--link-visited-color: #00008b;
 	--link-hover-color: #0000ff;
 	--link-active-color: #b33b72;    
-	--link-background-color:var(--color-main);          
+	/* --link-background-color:var(--color-main);*/
 
 	/*--color-search-background:#7ba428;
 	--color-search-button-background:var(--color-main);*/
@@ -86,9 +86,11 @@ img {
 /****************/
 /* jouw code */
 body {
-	/* display: grid; */
+	display: grid;
 	/* grid-template-columns: 1fr 20rem; */
 	grid-template-columns: 2fr 1fr;
+
+	margin: 0;
 }
 
 body > header,
@@ -99,9 +101,16 @@ body > footer {
 
 header{
 	background-color: var(--color-header-background);
+
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+
+	/* position: relative;
+	top: 0;
+	z-index: 5; */
+	/* Wat is z-index? */
+
 
 	/*display: grid;
 	grid-template-columns: 1fr max-content;*/
@@ -114,13 +123,9 @@ header{
 /* LOGO/NAAM */
 /*********************/
 header > a{
-	/* display: block;
+	display: block;
 	width: 15em;
-	height: 6em;
-	padding: 1em 1em 1em 1em; */
-	
-	display: flex;
-	width: 15em;
+	height: 5em;
 	padding: 0.5em 2em 0.5em 2em;
 	
 	/* line-height:1em; */
@@ -138,12 +143,13 @@ header > a{
 } */
 
 
+
 /*********************/
 /* NAVIGATIE*/
 /*********************/
 header nav{
-	background-color: var(--color-header-background);
-	display: none;
+	background-color: var(--color-menu-background);
+	/* display: grid; */
 	/* ivm hamburger menu hoeft nav niet zichtbaar te zijn */
 
 	flex-grow: 1;
@@ -157,95 +163,72 @@ header nav ul{
 	display: flex;
 	/* gap: 0.5em; */
 	justify-content: space-evenly;
+	gap: 1em;
 
-	font-weight: 500;
+	/* background-color:var(--color-second);
+	font-weight: 500; */
 }
 header nav li{
 	/* flex-grow: 3;
 	min-width: 4em; */
 	min-width: 3.5em;
   	flex-grow: 1;
-	/* wat betekent flex-grow en mid-width? */
+	/* Wat betekent flex-grow en mid-width? */
 }
-/* header ul{
-	
-	display:flex;
-	grid-template-columns:min-content min-content;
-	list-style: none;
 
-	grid-gap: 2em;
-	align-items:center;
-	
-	font-weight:bold; 
-} */
-/* header nav a{
-	color:var(--color-text-second);
-	text-decoration: none;
-} */
-
-/* header list items stylen */
+/* header link stylen */
 header nav a{
-	background-color: var(--color-second);
+	background-color: var(--color-menu-item-background);
 	text-decoration: none;
 	outline: none;
-	color: var(--color-main);
+	color: var(--color-menu-item-text);
 
 	display: block;
 	line-height: 6em;
 	text-align: center;
 }
-header nav a.active {
-	font-weight: 700;
+header nav a:active {
+	font-weight: 400;
 	/* de cursor geen handje wordt als je over de activee link hovert */
-	cursor: default
+	cursor: default;
 };
 header nav a:hover:not(.active) {
 	/* als je over een link in het menu hovert (maar niet de actieve link)  */
-	background-color:var(--color-second);
-	color:var(--color-text-third)
+	background-color:var(--color-menu-item-text);
+	color:var(--color-menu-item-background);
 }
+/* Waarom kleurt de hover niet? */
+
 header nav a:focus {
 	/* links in het menu wordt onderstreept als je er met het toetsenbord naar tabt */
 	text-decoration:underline;
-	/* waarom kleurt de hover niet? */
 }
-  
-/* navigatie links, button apart */
-header ul li:nth-of-type(1){
-	display: flex;
-	justify-content: start;
-}
-/* header ul li:nth-of-type(6){
-	display: flex;
 
-} */
-/* header ul li:nth-of-type(7){
-	display: flex;
-	justify-content: flex-end;
-} */
-header ul li:nth-of-type(7){
-	margin-left: auto;
-}
-header ul li:last-of-type{
-	/* margin-left: auto; */
-	display: flex;
-	justify-content: end;
-}
-/* /* header section h2 img{
-	display: grid;
-	width: 100%;
-} */
-/* header section h3{
-	position: relative;
-	left: 1em;
-	bottom: 1em;
-} */
 header button {
 	background-color: var(--color-second);
+	color: var(--color-text-second);
+
+	/* min-height:3em;
+  	padding:0 1em;
+  	border:none; */
+  
+  	/* om het standaard randje bij focus niet te tonen */
+  	/* outline:none; */
+  	/* nodig voor telefoons */
+  	/* appearance:none; */
+}
+header li button {
+	background-color: var(--color-second);
+	color: var(--color-text-second);
+
 	/* line-height:2em;
 	padding:0 .5em;
 	cursor: pointer; */
 }
+header button span{
+	display: none;
+}
+
 
 .sr-only:not(:focus):not(:active) {
 	clip: rect(0 0 0 0); 
@@ -256,9 +239,8 @@ header button {
 	white-space: nowrap; 
 	width: 1px;
 }
-header button span{
-	display: none;
-}
+
+
 
 /*********************/
 /* ZOEK FORMULIER*/
@@ -297,6 +279,7 @@ header form button {
 }
 
 
+
 /*********************/
 /* MAIN*/
 /*********************/
@@ -312,6 +295,8 @@ main{
 section.featured-artist h2{
 	width: 100%;
 } 
+
+
 
 /*********************/
 /* MAIN-HIGHLIGHTS*/
@@ -388,6 +373,8 @@ section.featured-artist h2{
 	border-radius: 1%;
 }
 
+
+
 /*********************/
 /* MAIN-RECENT-BEKEKEN*/
 /*********************/
@@ -428,7 +415,7 @@ section.featured-artist h2{
 	text-decoration: none;
 }
 .recent-events a:link, a:visited {
-	background-color:var(--link-background-color);
+	/* background-color:var(--link-background-color); */
 	/* border: #b33b72; */
 	padding: 10px 20px;
   	text-align: center;
@@ -519,25 +506,268 @@ section.featured-artist h2{
 
 
 
+/*********************/
+/* MAIN-AANBEVOLEN-EVENTS*/
+/*********************/
+.aanbevolen-events {
+	display: grid;
+}
+
+.aanbevolen-events ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap);
+}
+.aanbevolen-events li {
+	display: flex;
+	flex-direction:column-reverse;
+	/* Wat betekent colum-reverse? */
+  	justify-content:flex-end;
+}
+
+.aanbevolen-events h2 {
+	display: flex;
+	place-content: center;
+	
+	font-weight:700;
+	color:var(--color-text);
+}
+.aanbevolen-events h3{ 
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--color-text);
+	text-decoration: none;
+}
+.aanbevolen-events h3:hover {
+	color:var(--link-hover-color);
+	text-decoration: underline;
+}
+.aanbevolen-events h3:active {
+	color:var(--link-active-color);
+}
+
+.aanbevolen-events p {
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 0.90rem;
+	font-weight: 400;
+	color: var(--color-text-third);
+}
+
+.aanbevolen-events a {
+	text-decoration: none;
+}
+
+.aanbevolen-events img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	border-radius: 1%;
+}
+
+
+
+/*********************/
+/* MAIN-UITGELICHT-EVENTS*/
+/*********************/
+.uitgelicht-events {
+	display: grid;
+}
+
+.uitgelicht-events ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap);
+}
+.uitgelicht-events li {
+	display: flex;
+	flex-direction:column-reverse;
+	/* Wat betekent colum-reverse? */
+  	justify-content:flex-end;
+}
+
+.uitgelicht-events h2 {
+	display: flex;
+	place-content: center;
+	
+	font-weight:700;
+	color:var(--color-text);
+}
+.uitgelicht-events h3{ 
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--color-text);
+	text-decoration: none;
+}
+.uitgelicht-events h3:hover {
+	color:var(--link-hover-color);
+	text-decoration: underline;
+}
+.uitgelicht-events h3:active {
+	color:var(--link-active-color);
+}
+
+.uitgelicht-events a {
+	text-decoration: none;
+}
+
+.uitgelicht-events img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	border-radius: 1%;
+}
+
+
+
+/*********************/
+/* FOOTER*/
+/*********************/
+footer{
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+
+	background-color: var(--color-footer-background);
+	color:var(--color-text-second);
+}
+
+footer img {
+	display: block;
+	width: 12rem;
+	padding: 4em 1em 3em 1em;
+}
+
+footer h3 {
+	margin: 0;
+	padding: 1em;
+
+	display: block;
+
+	text-align: start;
+	font-weight: 700;
+	color: var(--color-text-second);
+}
+footer p {
+	margin: 0;
+	padding: 1em;
+
+	display: block;
+	
+
+	text-align: start;
+	font-weight: 400;
+	color: var(--color-text-second)
+}
+
+footer a {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+
+	text-align: start;
+	font-weight: 400;
+	color: var(--color-text-second)
+}
 
 
 
 
 
+/*********************/
+/* MEDIA QUERY */
+/*********************/
+@media screen and (min-width:1000px){
+	header button span{
+		display: inline;
+	}
+
+	header nav{
+		display: block;
+	}
+}
+/* Vanaf 1000px breed doet css alles wat je op desktop wilt zien. */
 
 
 
 
+/*********************/
+/* RANDOM NOTES*/
+/*********************/
+
+/*scrollbar toevoegen:
+overflow-x:auto;*/
+  /* om de kinderen te laten snappen */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type */
+  /*scroll-snap-type: x mandatory;*/
+  
+  /* om te voorkomen dat bij het einde van de ul de body gaat scrollen */
+  /* daarmee zou de 'back' of 'forward' functie geactiveerd worden */
+  /* en nu dus niet */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior */
+  /*overscroll-behavior: contain auto;*/
+  
+  /* voor de zwarte piste */
+  /* zelf googlen */
+  /*-webkit-overflow-scrolling: touch;*/
 
 
 
 
+/*********************/
+/* OUDE CODE NAVIGATIE*/
+/*********************/
+/* navigatie links, button apart */
+/* header ul li:nth-of-type(1){
+	display: flex;
+	justify-content: start;
+} */
+/* header ul li:nth-of-type(6){
+	display: flex;
+
+} */
+/* header ul li:nth-of-type(7){
+	display: flex;
+	justify-content: flex-end;
+} */
+/* header ul li:nth-of-type(7){
+	margin-left: auto;
+} */
+/* header ul li:last-of-type{ */
+	/* margin-left: auto; */
+	/* display: flex;
+	justify-content: end;
+} */
 
 
 
-
-
-/* main h2 img {
+/*********************/
+/* OUDE CODE MAIN*/
+/*********************/
+  /* main h2 img {
 	display: flex;
 	justify-content: flex-end;
 
@@ -599,50 +829,3 @@ main li:nth-of-type(1){
 	width:100%;
 	height:auto;
 } */
-
-/*********************/
-/* FOOTER*/
-/*********************/
-footer{
-	background-color: var(--color-footer-background);
-	color:var(--color-text-second);
-}
-footer img {
-	width: 12rem;
-}
-
-
-
-/*********************/
-/* MEDIA QUERY */
-/*********************/
-@media screen and (min-width:1000px){
-	header button span{
-		display: inline;
-	}
-
-	header nav{
-		display: block;
-	}
-}
-/* Vanaf 1000px breed doet css alles wat je op desktop wilt zien. */
-
-
-
-
-
-/*scrollbar toevoegen:
-overflow-x:auto;*/
-  /* om de kinderen te laten snappen */
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type */
-  /*scroll-snap-type: x mandatory;*/
-  
-  /* om te voorkomen dat bij het einde van de ul de body gaat scrollen */
-  /* daarmee zou de 'back' of 'forward' functie geactiveerd worden */
-  /* en nu dus niet */
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior */
-  /*overscroll-behavior: contain auto;*/
-  
-  /* voor de zwarte piste */
-  /* zelf googlen */
-  /*-webkit-overflow-scrolling: touch;*/
