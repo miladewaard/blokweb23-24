@@ -37,6 +37,13 @@ img {
 	--color-menu-item-text:var(--color-text-second);
 	--color-menu-item-background:var(--color-second);
 
+	--default-gap: 1.5rem;
+
+	--link-visited-color: #00008b;
+	--link-hover-color: #0000ff;
+	--link-active-color: #b33b72;    
+	--link-background-color:var(--color-main);          
+
 	/*--color-search-background:#7ba428;
 	--color-search-button-background:var(--color-main);*/
 
@@ -48,6 +55,12 @@ img {
 /*********************/
 /* CODE VOOR @FONT-FACE */
 /*********************/
+@font-face {
+	font-family: 'Averta';
+	src: url(../fonts/Averta-Light.otf);
+	font-weight: 200;
+}
+
 @font-face {
 	font-family: 'Averta';
 	src: url(../fonts/Averta-Regular.otf);
@@ -73,7 +86,7 @@ img {
 /****************/
 /* jouw code */
 body {
-	display: grid;
+	/* display: grid; */
 	/* grid-template-columns: 1fr 20rem; */
 	grid-template-columns: 2fr 1fr;
 }
@@ -92,21 +105,42 @@ header{
 
 	/*display: grid;
 	grid-template-columns: 1fr max-content;*/
+	/* gap:var(--tmplt-size-whitespace); */
 	/*Hoezo is grid niet nodig voor de header?*/
 }
-/* logo/name te positioneren */
-header > a{
-	display: block;
-	width: 15em;
-	height: 4em;
-	padding: 1em 1em 1em 1em;
-}
-header > a:hover{
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	/* padding: 1.5em 1.5em 1.5em 1.5em; */
-}
 
-/* header list items plaatsen van elkaar */
+
+/*********************/
+/* LOGO/NAAM */
+/*********************/
+header > a{
+	/* display: block;
+	width: 15em;
+	height: 6em;
+	padding: 1em 1em 1em 1em; */
+	
+	display: flex;
+	width: 15em;
+	padding: 0.5em 2em 0.5em 2em;
+	
+	/* line-height:1em; */
+	color:var(--color-second);
+}
+/* header > a:hover{ */
+	/* padding: 0.5em 0.5em 0.5em 0.5em; */
+	/* padding: 1.5em 1.5em 1.5em 1.5em; */
+	/* padding:.75em 2.75em .75em 0; */
+	/* text-align:right; */
+	/* background-position:calc(100% - .75em) center; */
+/* } */
+/* header > a:focus {
+	text-decoration:underline;
+} */
+
+
+/*********************/
+/* NAVIGATIE*/
+/*********************/
 header nav{
 	background-color: var(--color-header-background);
 	display: none;
@@ -121,13 +155,16 @@ header nav ul{
 	align-items: center;
 
 	display: flex;
-	gap: 2em;
+	/* gap: 0.5em; */
+	justify-content: space-evenly;
 
-	font-weight: 700;
+	font-weight: 500;
 }
 header nav li{
-	flex-grow: 3;
-	min-width: 4em;
+	/* flex-grow: 3;
+	min-width: 4em; */
+	min-width: 3.5em;
+  	flex-grow: 1;
 	/* wat betekent flex-grow en mid-width? */
 }
 /* header ul{
@@ -154,26 +191,26 @@ header nav a{
 	color: var(--color-main);
 
 	display: block;
-	line-height: 3.5em;
+	line-height: 6em;
 	text-align: center;
 }
-header nav.active {
+header nav a.active {
 	font-weight: 700;
-	/* de cursor geen handje wordt als je over de active link hovert */
+	/* de cursor geen handje wordt als je over de activee link hovert */
 	cursor: default
 };
-header nav a:hover:not(.active){
-	/* als je over een link in het menu hovert (maar niet de active link)  */
+header nav a:hover:not(.active) {
+	/* als je over een link in het menu hovert (maar niet de actieve link)  */
 	background-color:var(--color-second);
 	color:var(--color-text-third)
 }
-/* waarom kleurt de hover niet? */
 header nav a:focus {
 	/* links in het menu wordt onderstreept als je er met het toetsenbord naar tabt */
 	text-decoration:underline;
+	/* waarom kleurt de hover niet? */
 }
   
-
+/* navigatie links, button apart */
 header ul li:nth-of-type(1){
 	display: flex;
 	justify-content: start;
@@ -194,16 +231,21 @@ header ul li:last-of-type{
 	display: flex;
 	justify-content: end;
 }
-header section h2 img{
+/* /* header section h2 img{
 	display: grid;
 	width: 100%;
-}
+} */
 /* header section h3{
 	position: relative;
 	left: 1em;
 	bottom: 1em;
-}*/
-
+} */
+header button {
+	background-color: var(--color-second);
+	/* line-height:2em;
+	padding:0 .5em;
+	cursor: pointer; */
+}
 
 .sr-only:not(:focus):not(:active) {
 	clip: rect(0 0 0 0); 
@@ -218,9 +260,12 @@ header button span{
 	display: none;
 }
 
-/* header zoek formulier */
+/*********************/
+/* ZOEK FORMULIER*/
+/*********************/
 header form {
-	padding: .75em;
+	/* padding: .75em; */
+	padding: 2em;
 	background-color: var(--color-second);
 
 	flex-grow: 5;
@@ -237,11 +282,11 @@ header form input {
 	padding:0 .5em;
 }
 input, button {
-	  /* om de standaard style op bijv. iOS te voorkomen */
-	  -webkit-appearance:none;
-	  appearance:none;
-	  border:none;
-	  font:inherit;
+	/* om de standaard style op bijv. iOS te voorkomen */
+	-webkit-appearance:none;
+	appearance:none;
+	border:none;
+	font:inherit;
 }
 header form button {
 	line-height:2em;
@@ -251,51 +296,319 @@ header form button {
 	cursor:pointer;
 }
 
+
+/*********************/
+/* MAIN*/
+/*********************/
 main{
 	background-color: var(--color-main);
-
-	/*display: grid;
-	grid-template-columns: 1fr 1fr;*/
+	display: grid;
 }
 
-main h2{
-	/*display: flex;
-	align-items: center;*/
+.featured-artist{
+	display:block;
+	
+}
+section.featured-artist h2{
+	width: 100%;
+} 
+
+/*********************/
+/* MAIN-HIGHLIGHTS*/
+/*********************/
+.highlights-events {
+	display: grid;
+
+	/* position: relative; */
+}
+
+.highlights-events ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+	
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap);
+}
+.highlights-events li {
+	display: flex;
+	flex-direction:column-reverse;
+	/* Wat betekent colum-reverse? */
+  	justify-content:flex-end;
+	/* padding:1.5em 1.5em 0; */
+}
+
+.highlights-events h3{ 
+	display: block;
+	/* margin-block-start: 1em;
+	margin-block-end: 1em; */
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--color-text);
+	text-decoration: none;
+
+	/* position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0; */
+}
+.highlights-events h3:hover {
+	color:var(--link-hover-color);
+	text-decoration: underline;
+}
+.highlights-events h3:active {
+	color:var(--link-active-color);
+}
+
+.highlights-events p {
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 0.90rem;
+	font-weight: 400;
+	color: var(--color-text-third);
+}
+
+.highlights-events a {
+	text-decoration: none;
+}
+
+.highlights-events img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	border-radius: 1%;
+}
+
+/*********************/
+/* MAIN-RECENT-BEKEKEN*/
+/*********************/
+.recent-events {
+	display: grid;
+}
+.recent-events ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+	
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap);
+}
+.recent-events h2 {
+	display: flex;
+	place-content: center;
+	
+	font-weight:700;
+	color:var(--color-text);
+}
+.recent-events a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	color: var(--color-text);
+}
+/* .recent-events a:visited {
+	color:var(--link-visited-color);
+} */
+.recent-events a:hover {
+	color:var(--link-hover-color);
+	text-decoration: none;
+}
+.recent-events a:active {
+	color:var(--link-active-color);
+	text-decoration: none;
+}
+.recent-events a:link, a:visited {
+	background-color:var(--link-background-color);
+	/* border: #b33b72; */
+	padding: 10px 20px;
+  	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+  
+/* .recent-events a:hover, a:active {
+	background-color: red;
+} */
+
+
+
+/*********************/
+/* MAIN-POPULAIR-EVENTS*/
+/*********************/
+.populair-events {
+	display: grid;
+}
+.populair-events ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+	
+	display: flex;
+	/* grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) ); */
+	gap:var(--default-gap);
+	/* carrousel maken */
+}
+/* .populair-events li { */
+	/* display: flex; */
+	/* flex-direction:column-reverse; */
+	/* Wat betekent colum-reverse? */
+  	/* justify-content:flex-end; */
+	/* padding:1.5em 1.5em 0; */
+/* } */
+
+.populair-events h2 {
+	display: flex;
+	place-content: center;
+	
+	font-weight:700;
+	color:var(--color-text);
+}
+.populair-events h3{ 
+	display: block;
+	/* margin-block-start: 1em;
+	margin-block-end: 1em; */
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--color-text);
+	text-decoration: none;
+
+	/* position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0; */
+}
+.populair-events h3:hover {
+	color:var(--link-hover-color);
+	text-decoration: underline;
+}
+.populair-events h3:active {
+	color:var(--link-active-color);
+}
+
+.populair-events p {
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 0.90rem;
+	font-weight: 400;
+	color: var(--color-text-third);
+}
+
+.populair-events a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	color: var(--color-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main h2 img {
+	display: flex;
+	justify-content: flex-end;
+
+	width: 100%;
+} */
+/* tom odell foto flexen, hoe?? */
+
+/* main h2 {
+	display: flex;
+	align-items: center;
 	display: grid;
 	place-content: center;
 	
 
 	font-weight:700;
 	color: var(--color-third);
-}
-main section ul {
+} */
+/* main h3 {
 	display: grid;
-	/*grid-row-start: 1;*/
-	grid-template-columns: 2fr 1fr 1fr;
+	
+	text-align: start;
+	text-decoration: none;
+	line-height: 0.5em;
+} */
+/* niks veranderd?? */
 
-}
-/*Waarom werkt grid niet?*/
-/*Hoe benoem je de h3?*/
-
-main section ul{
-	margin: 1.5em;
-	padding: 1.5em;
-	list-style: none;
-
-	display: grid;
+/* main ul{ */
+	/* display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1em;
-}
+
+	margin: 1.5em;
+	padding: 1.5em;
+	list-style: none; */
+
+	/* display:grid;
+  	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+ 	gap:2em; */
+  
+ 	/* margin:0;
+ 	padding:0 2em 2em;
+  	list-style: none; */
+/* } */
 /*Hoe zorg ik dat alleen de eerste ul dit grid heeft?*/
 
+/* main li{
+	display:flex;
+	flex-direction:column-reverse;
+	wat betekent colum-reverse?
+	justify-content:flex-end;
+	padding:1.5em 1.5em 0;
+}
+main li:nth-of-type(1){
+	width: 100%;
+} */
 
+/* main img {
+	display:block;
+	width:100%;
+	height:auto;
+} */
 
+/*********************/
+/* FOOTER*/
+/*********************/
 footer{
 	background-color: var(--color-footer-background);
 	color:var(--color-text-second);
 }
 footer img {
-	width: 15rem;
+	width: 12rem;
 }
 
 

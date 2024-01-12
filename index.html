@@ -25,7 +25,8 @@
 		<!--navigatie-->
 		<nav>
 			<ul>
-				<li> <a class="active" href="#" alt="Comedy">Comedy</a></li>
+				<li> <a href="#" alt="Muziek">Muziek</a></li>
+				<li> <a href="#" alt="Comedy">Comedy</a></li>
 				<li> <a href="#" alt="Sport">Sport</a></li>
 				<li> <a href="#" alt="Festivals">Festivals</a></li>
 				<li> <a href="#" alt="Familie">Familie</a></li>
@@ -36,7 +37,7 @@
 
 		<!--login/registreer item-->
 		<button type="button"><svg viewBox="0 0 24 24" width="24px" height="24px" aria-hidden="true" focusable="false" class="BaseSvg-sc-yh8lnd-0 UserIcon___StyledBaseSvg-sc-16rhua7-0 ckLyyv"><path d="M8 6.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM12 1a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm6.49 12H5.43L1 16.9V23h22v-6.12L18.49 13ZM2.5 17.58 6 14.5h11.93l3.57 3.07v3.93h-19v-3.92Z"></path></svg><span>Login/registreer</span></button>
-		<!-- span omdat de teskt niet zichtbaar mag zijn op mobile device -->
+		<!-- span omdat de tekst niet zichtbaar mag zijn op mobile device -->
 		<!--het zoek formulier-->
 		<form role="search" action="#">
 			<input type="search" id="search" placeholder="Zoek op artiest, evenement of locatie" autocomplete="off" aria-label="zoeken">
@@ -47,12 +48,13 @@
 
 
 	<main>
-		<section>
+		<section class="featured-artist">
 			<h2><img src="images/tom-odell.jpg" alt="Afbeelding van Tom Odell"></h2>
 			<h3>Tom Odell</h3>
+			<button type="button">Tickets</button>
 		</section>
 
-		<section>
+		<section class="highlights-events">
 			<h2 lang="en" class="sr-only">Highlights</h2>
 			<!--h2 highlights onzichtbaar-->
 		
@@ -88,39 +90,27 @@
 			</ul>
 		</section>
 
-		<section>	
+		<section class="recent-events">	
 			<h2>RECENT BEKEKEN</h2>
 
 			<ul>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/green-day-tickets/2686">
-						<button type="submit">Green Day</button>
-					</form>
+					<a href="https://www.ticketmaster.nl/artist/green-day-tickets/2686" alt="Green Day">Green Day</a>
 				</li>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/zara-larsson-tickets/930224">
-						<button type="submit">Zara Larsson</button>
-					 </form>
+					<a href="https://www.ticketmaster.nl/artist/zara-larsson-tickets/930224" alt="Zara Larsson">Zara Larsson</a>
 				</li>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/pinkpop-tickets/109963">
-						<button type="submit">Pinkpop</button>
-					</form>
+					<a href="https://www.ticketmaster.nl/artist/pinkpop-tickets/109963" alt="Pinkpop">Pinkpop</a>
 				</li>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/tom-odell-tickets/912725">
-						<button type="submit">Tom Odell</button>
-					</form>
+					<a href="https://www.ticketmaster.nl/artist/tom-odell-tickets/912725" alt="Tom Odell">Tom Odell</a>
 				</li>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/p-nk-tickets/8177">
-						<button type="submit">P!NK</button>
-					</form>
+					<a href="https://www.ticketmaster.nl/artist/p-nk-tickets/8177" alt="P!NK">P!NK</a>
 				</li>
 				<li>
-					<form action="https://www.ticketmaster.nl/artist/jean-paul-gaultier-s-fashion-freak-show-tickets/1150094">
-						<button type="submit">Jean Paul Gaultier's Fashion Freak Show</button>
-					</form>
+					<a href="https://www.ticketmaster.nl/artist/jean-paul-gaultier-s-fashion-freak-show-tickets/1150094" alt="Jean Paul Gaultier's Fashion Freak Show">Jean Paul Gaultier's Fashion Freak Show</a>
 				</li>
 				<li>
 					<form action="">
@@ -132,7 +122,7 @@
 
 		<!--Advertentie-->
 
-		<section>	
+		<section class="populair-events">	
 			<h2>POPULAIR</h2>
 
 			<ul>
