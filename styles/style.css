@@ -10,8 +10,9 @@ img {
 	width: 100%;
 }
 
-
-
+button:not(disabled) {
+	cursor:pointer;
+  }
 
 
 
@@ -88,6 +89,7 @@ img {
 body {
 	display: grid;
 	/* grid-template-columns: 2fr 1fr; */
+	/* De grid-template hierboven niet nodg aangezien je niet voor desktop ontwerp.*/
 	grid-template-columns: 2fr;
 
 	margin: 0;
@@ -121,6 +123,69 @@ header{
 	/* gap:var(--tmplt-size-whitespace); */
 	/*Hoezo is grid niet nodig voor de header?*/
 }
+
+/* header button svg {
+	padding:.5em;
+  
+	icon en tekst met gap-je naast elkaar
+	display:flex;
+	align-items:center;
+	gap:.25em;
+	
+	standaard styling aanpassen
+	appearance:none;
+	background-color:var(--color-second);
+	border:none;
+	border-radius:.25em; 
+	font:inherit;
+	text-align:center;
+	color:var(--button-color);
+  } */
+
+/*********************/
+/* MENU BUTTON */
+/*********************/
+header > button {
+	order:-1;
+}
+
+/***************/
+/* SLUIT BUTTON */
+/***************/
+nav button {
+	justify-self:start;
+}
+
+/************/
+/* HET MENU */
+/************/
+nav {
+	padding:1em;
+	
+	display:grid;
+	align-content:start;
+	gap:1em;
+	
+	/* background-image:var(--menu-gradient); */
+	
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	translate:-100% 0%;
+	
+	transition:translate .3s;
+}
+  
+/* als menu open is */
+nav.toonMenu {
+
+	translate:0% 0%;
+	transition: 250ms;
+}
+
 
 
 /*********************/
@@ -305,7 +370,7 @@ main{
 } 
 /* Hoe kan ik de foto croppen? */
 .featured-artist h3 {
-	display: flex;
+	display: block;
 
 	min-height: 0.5rem;
 	margin: 2rem;
@@ -320,8 +385,24 @@ main{
 .featured-artist a {
 	text-decoration: none;
 
-	min-height: 0.5rem;
+	/* min-height: 0.5rem;
+	margin: 2rem; */
+	padding: 1em 0.5em 1em 0.5em;
+
 	margin: 2rem;
+	min-height: 0.5rem;
+	width: 8em;
+
+	border-radius: 0.2em;
+	text-align:center;
+
+	background-color:var(--color-second);
+	color:var(--color-text-second);
+}
+
+.featured-artist a:hover {
+	background-color: var(--color-second);
+	border-radius:2em;
 }
 
 
@@ -726,31 +807,35 @@ main{
 footer{
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap); */
+
+	margin: 0;
+	padding-left: 1.5em;
 
 	background-color: var(--color-footer-background);
 	color:var(--color-text-second);
 }
 
 
-
 .social-media {
 	display: grid;
 }
+
 .social-media ul {
-	margin:0;
-	padding:0 1.5em 1.5em;
+	margin: 0;
+	padding: 0 1.5em 1em 0.5em;
 	list-style:none;
 
 	display: flex;
 	flex-wrap: wrap;
 
-	justify-content: space-evenly;
-	gap: 1em;
+	justify-content: flex-start;
+	gap: 0.5em;
 }
 .social-media li {
 	display:flex;
 	flex-direction:column;
-	gap:.25em;
 }
 
 .social-media a {
@@ -763,11 +848,176 @@ footer{
 	height: auto; */
 
 	padding: 0.5em 0.5em 0.5em 0.5em;
-	width: 3rem;
+	width: 2.5rem;
 	height: auto;
+	gap: 1em;
 }
 
 
+.onze-apps {
+	display: grid;
+}
+
+.onze-apps ul {
+	margin:0;
+	padding: 0 1.5em 1em 0.5em;
+	list-style:none;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: flex-start;
+	gap: 0.5em;
+}
+.onze-apps li {
+	display: flex;
+	flex-direction:column;
+}
+
+.onze-apps a {
+	text-decoration: none;
+}
+
+.onze-apps img {
+	display: block;
+
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	width: 9rem;
+	height: auto;
+	gap: 1em;
+}
+
+
+.helpen-graag {
+	display: grid;
+}
+
+.helpen-graag ul {
+	display: block;
+	/* Block gekozen, zodat het onder elkaar blijft staan. Met flex komt het naast elkaar */
+	list-style: none;
+
+	margin:0;
+	/* padding: 2em 1em; */
+	padding:0 1.2em 1em;
+
+	/* display: flex;
+	flex-wrap: wrap; */
+	/* justify-content: flex-start;
+	gap: 1em; */
+}
+.helpen-graag li {
+	display: flex;
+	flex-wrap: wrap;
+
+	height: 2em;
+}
+
+.helpen-graag a {
+	text-decoration: none;
+}
+.helpen-graag a:hover {
+	color:var(--color-text-second);
+	text-decoration: underline;
+}
+.helpen-graag a:active {
+	color:var(--link-active-color);
+}
+
+
+.ook-hebben-wij {
+	display: grid;
+}
+
+.ook-hebben-wij ul {
+	display: block;
+	list-style: none;
+
+	margin: 0;
+	/* padding: 0 1.5em 1em 0.5em; */
+	padding:0 1.2em 1em;
+}
+.ook-hebben-wij li {
+	display: flex;
+	flex-wrap: wrap;
+	
+	height: 2em;
+}
+
+.ook-hebben-wij a {
+	text-decoration: none;
+}
+.ook-hebben-wij a:hover {
+	color:var(--color-text-second);
+	text-decoration: underline;
+}
+.ook-hebben-wij a:active {
+	color:var(--link-active-color);
+}
+
+
+.over-ons {
+	display: grid;
+}
+
+.over-ons ul {
+	display: block;
+	list-style: none;
+
+	margin: 0;
+	padding:0 1.2em 1em;
+}
+.over-ons li {
+	display: flex;
+	flex-wrap: wrap;
+
+	height: 2em;
+}
+
+.over-ons a {
+	text-decoration: none;
+}
+.over-ons a:hover {
+	color:var(--color-text-second);
+	text-decoration: underline;
+}
+.over-ons a:active {
+	color:var(--link-active-color);
+}
+
+/* Waarom gaan de img's van "Ons Netwerk" niet hetzelfde staan als  'Onze Apps" (heeft dezelfde code) */
+.ons-netwerk {
+	display: grid;
+}
+
+.ons-netwerk ul {
+	margin:0;
+	padding: 0 1.5em 1em 0.5em;
+	list-style:none;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: flex-start;
+	gap: 0.5em;
+}
+.ons-netwerk li {
+	display: flex;
+	flex-direction:column;
+}
+
+.ons-netwerk a {
+	text-decoration: none;
+}
+
+.ons-netwerk img {
+	display: block;
+
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	width: 9rem;
+	height: auto;
+	gap: 1em;
+}
 
 
 footer img {
@@ -783,7 +1033,8 @@ footer h3 {
 	display: block;
 
 	text-align: start;
-	font-weight: 700;
+	font-weight: 400;
+	/* font-size: 4em; */
 	color: var(--color-text-second);
 }
 footer p {

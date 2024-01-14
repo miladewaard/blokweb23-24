@@ -15,7 +15,15 @@
 <body>
 	<header>
 		<!--hamburger menu-->
+
+		<!-- de open button -->
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
 		<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
+
+
+
+		<!-- <button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button> -->
 		<!-- hamburger menu als eerste, zodat die helemaal links staat. Ook mag die niet in de nav omdat die het moet uiutklappen -->
 		<!-- span omdat de tekst niet zichtbaar mag zijn op desktop device -->
 
@@ -23,8 +31,14 @@
 		<a href=""><h1><img src="images/logo-white.png" alt="Welkom bij Ticketmaster.nl"></h1></a>
 		<!--Mag een h1 in een ul? Omdat het logo naast de navigiatie staat?-->
 
+
+
 		<!--navigatie-->
 		<nav>
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<button aria-hidden="true"><svg class="BaseSvg-sc-yh8lnd-0 HamburgerIcon___StyledBaseSvg-sc-1cla98k-0 ckLyyv sc-1f28vh9-4 cctwgv" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg></button>
+
 			<ul>
 				<li> <a href="#" alt="Muziek">Muziek</a></li>
 				<li> <a href="#" alt="Comedy">Comedy</a></li>
@@ -270,6 +284,7 @@
 	<footer>
 		<img src="images/logo-white.png" alt="Beeldmerk"> <!--kleur foto  wijzigen-->
 
+		<!-- Mag een section zonder h1/h2/h3 worden gebruikt? -->
 		<section class="social-media">
 			<p>Volg ons</p>
 				<ul>
@@ -301,58 +316,71 @@
 		</section>
 
 		<p>Download onze Apps</p>
-				<ul>
-					<li><a href="#">
-						<img src="images/appstore.svg" alt="App Store app"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/googleplay.svg" alt="Google play app"/>
-						</a>	
-					</li>
-				</ul>
+			<section class="onze-apps">
+					<ul>
+						<li><a href="#">
+							<img src="images/appstore.svg" alt="App Store app"/>
+							</a>	
+						</li>
+						<li><a href="#">
+							<img src="images/googleplay.svg" alt="Google play app"/>
+							</a>	
+						</li>
+					</ul>
+			</section>
 
 		<p>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="https://www.ticketmaster.nl/help/termsandconditions.html?language=nl-nl">voorwaarden voor gebruik</a></p>
 
 		<!-- <h3>Wij helpen je graag</h3> -->
 		<!-- <button data-toggle="collapse" data-target="#demo" aria-hidden="false">Wij helpen je graag</button> -->
-		<button aria-hidden="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
-			<ul>
-				<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
-				<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
-				<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/annuleringsverzekering/?language=nl-nl">Verzekering</a></li>
-			</ul>	
-		<h3>Wat wij ook hebben</h3>
-			<ul>
-				<li><a href="https://www.ticketmaster.nl/feature/collectorcard/?language=nl-nl">Collector Cards</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/alpine/">Gehoorbescherming</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/cadeaukaart/?language=nl-nl">Cadeaukaart</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/platinumtickets/?language=nl-nl">Platinum Tickets</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/?language=nl-nl">Doorverkoop</a></li>
-			</ul>	
-		<h3>Over ons</h3>
-			<ul>
-				<li><a href="#">Branding</a></li> 
-				<!-- De link naar "Branding" was een beveiligde link, dus die heb ik er niet in gezet.-->
-				<li><a href="https://www.ticketmaster.nl/feature/vacatures/?language=nl-nl">Vacatures</a></li>
-			</ul>	
-		<h3>Doe zaken met ons</h3>
-			<ul>
-				<li><a href="https://business.ticketmaster.nl/adverteren/">Adverteren</a></li>
-				<li><a href="https://www.ticketmaster.nl/feature/affiliates/?language=nl-nl">Affiliate worden</a></li>
-				<li><a href="https://business.ticketmaster.nl">Zelf een event organiseren</a></li>
-			</ul>
+		<section class="helpen-graag">
+			<button aria-hidden="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
+				<ul>
+					<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
+					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
+					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/annuleringsverzekering/?language=nl-nl">Verzekering</a></li>
+				</ul>
+		</section>	
+
+		<section class="ook-hebben-wij">
+			<h3>Wat wij ook hebben</h3>
+				<ul>
+					<li><a href="https://www.ticketmaster.nl/feature/collectorcard/?language=nl-nl">Collector Cards</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/alpine/">Gehoorbescherming</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/cadeaukaart/?language=nl-nl">Cadeaukaart</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/platinumtickets/?language=nl-nl">Platinum Tickets</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/?language=nl-nl">Doorverkoop</a></li>
+				</ul>	
+		</section>
+
+		<section class="over-ons">
+			<h3>Over ons</h3>
+				<ul>
+					<li><a href="#">Branding</a></li> 
+					<!-- De link naar "Branding" was een beveiligde link, dus die heb ik er niet in gezet.-->
+					<li><a href="https://www.ticketmaster.nl/feature/vacatures/?language=nl-nl">Vacatures</a></li>
+				</ul>	
+			<h3>Doe zaken met ons</h3>
+				<ul>
+					<li><a href="https://business.ticketmaster.nl/adverteren/">Adverteren</a></li>
+					<li><a href="https://www.ticketmaster.nl/feature/affiliates/?language=nl-nl">Affiliate worden</a></li>
+					<li><a href="https://business.ticketmaster.nl">Zelf een event organiseren</a></li>
+				</ul>
+		</section>
 			
-		<p>Ons Netwerk</p>
-		<li><a href="#">
-			<img src="images/mojo.svg" alt="Mojo netwerk"/>
-			</a>	
-		</li>	
-		<li><a href="#">
-			<img src="images/livenation.svg" alt="Live nation netwerk"/>
-			</a>	
-		</li>
+		<h3>Ons Netwerk</h3>
+
+		<section class="ons-netwerk">
+			<li><a href="#">
+				<img src="images/mojo.svg" alt="Mojo netwerk"/>
+				</a>	
+			</li>	
+			<li><a href="#">
+				<img src="images/livenation.svg" alt="Live nation netwerk"/>
+				</a>	
+			</li>
+		</section>
 
 		<!-- De p's in de footer worden bij inspecteren als h3 genoemd? -->
 	</footer>
