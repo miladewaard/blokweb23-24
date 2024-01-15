@@ -2,35 +2,35 @@
 console.log("hi");
 
 /******************************/
-/* menu openen de MENU button */
+/* nav openen de NAV button */
 /******************************/
-// zoek de menu-button op en sla die op in een variabele
-var openHamburger = document.querySelector("header > button");
+// zoek de nav-button op en sla die op in een variabele
+var openHamburger = document.querySelector("header > button:first-of-type");
 
-// laat de menu-button luisteren naar kliks en voer dan een functie uit
-openHamburger.onclick = openMenu;
+// laat de nav-button luisteren naar kliks en voer dan een functie uit
+openHamburger.onclick = openNav;
 
 // voeg in de functie een class toe aan de nav
-function openMenu() {  
+function openNav() {  
   // zoek de nav op
   var deNav = document.querySelector("nav");
   // voeg class toe aan nav
-  deNav.classList.add("toonMenu");
+  deNav.classList.add("toonNav");
 }
 
 
 
 /************************************/
-/* menu sluiten met de sluit button */
+/* nav sluiten met de sluit button */
 /************************************/
 // zoek sluiten button op
 var sluitHamburger = document.querySelector("nav button");
 
 // laat die button luisteren naar kliks
-sluitHamburger.onclick = sluitMenu;
+sluitHamburger.onclick = sluitNav;
 
 // in de functie verwijder de class van de nav
-function sluitMenu() {
+function sluitNav() {
   var deNav = document.querySelector("nav");
-  deNav.classList.remove("toonMenu");
+  deNav.classList.remove("toonNav");
 }
