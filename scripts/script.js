@@ -13,7 +13,7 @@ openHamburger.onclick = openNav;
 // voeg in de functie een class toe aan de nav
 function openNav() {  
   // zoek de nav op
-  var deNav = document.querySelector("nav");
+  var deNav = document.querySelector("header > section");
   // voeg class toe aan nav
   deNav.classList.add("toonNav");
 }
@@ -24,13 +24,13 @@ function openNav() {
 /* nav sluiten met de sluit button */
 /************************************/
 // zoek sluiten button op
-var sluitHamburger = document.querySelector("nav button");
+var sluitHamburger = document.querySelector("header > section button");
 
 // laat die button luisteren naar kliks
 sluitHamburger.onclick = sluitNav;
 
 // in de functie verwijder de class van de nav
 function sluitNav() {
-  var deNav = document.querySelector("nav");
+  var deNav = document.querySelector("header > section");
   deNav.classList.remove("toonNav");
 }

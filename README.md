@@ -306,7 +306,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 9 - Eindgesprek
 
-<details open>
+<details opens>
   <summary></summary>
 
   ### Je uitkomst - karakteristiek screenshots:
