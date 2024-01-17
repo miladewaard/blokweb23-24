@@ -93,7 +93,6 @@ button:not(disabled) {
 body {
 	display: grid; 
 	/* grid-template-columns: 2fr 1fr; */
-	/* De grid-template hierboven niet nodg aangezien je niet voor desktop ontwerp.*/
 	grid-template-columns: 2fr;
 	margin: 0;
 }
@@ -117,27 +116,51 @@ header {
 	align-items: center;
 	gap: 1.5em;
 }
-/* header a {
-	width: auto;
-} */
 
+
+/****************/
+/* LOGO/NAAM*/
+/****************/
 header > a h1 img{
 	color:var(--color-header-background);
 
 	width: 70%;
 	/* justify-self: center; */
+	width: 5em;
+	padding: 0.5em 0em 0.5em 0em;
+	
+	line-height:1em;
 
 }
 
+
+/****************/
+/* BUTTON OPEN*/
+/****************/
 header > button:first-of-type {
 	background-color: var(--color-second);
+
+	padding-right: 5em;
 }
 
+
+/****************/
+/* BUTTON SLUIT*/
+/****************/
+header > button {
+	display: none;
+}
+
+
+/****************/
+/* ZOEK-FORMULIER*/
+/****************/
 header form {
 	/* padding: .75em; */
-	/* padding: 2em; */
 	background-color: var(--color-second);
 	justify-content: center;
+
+	padding: 0.75em;
 
 	display:flex;
 }
@@ -158,16 +181,23 @@ input, button {
 	font:inherit;
 } 
 header form button {
-	line-height:2em;
-	padding:0 .5em;
 	background-color:var(--color-second);
-	/* color:white; */
+
+	padding:0 .5em;
+	width: 1em;
+
 	cursor:pointer;
 }
 
+
+/****************/
+/* BUTTON LOGIN/REGISTREER*/
+/****************/
 header > button:last-of-type {
 	background-color: var(--color-second);
 	color: var(--color-text-second);
+
+	padding-left: 5em;
 
 	display: grid;
 	grid-template-columns:min-content min-content;
@@ -178,6 +208,9 @@ header > button:last-of-type {
 }
 
 
+/****************/
+/* NAVIGATIE*/
+/****************/
 header nav {
 	display: flex;
 }
@@ -231,17 +264,15 @@ header nav a:focus {
 }
 
 
-header > button {
-	display: none;
-}
-
-/* Navigatie bij mobile device */
+/****************/
+/* NAVIGATIE BIJ SMALL SCREEN*/
+/****************/
 header > section{
 	background-color: var(--color-menu-background);
 	
 	padding:1em;
 	
-	display:none;
+	/* display:none; */
 	align-content:start;
 	gap:1em;
 	
@@ -253,11 +284,7 @@ header > section{
 	
 	translate:-100% 0%;
 	transition:translate .3s;
-
-	display: grid;
-
 }
-
 
 /* Als de navigatie open is */
 .toonNav {
@@ -304,7 +331,6 @@ a:visited {
 	white-space: nowrap; 
 	width: 1px;
 }
-
 
 
 
@@ -360,9 +386,6 @@ main{
 	background-color: var(--color-second);
 	border-radius:2em;
 }
-
-
-
 
 
 /*********************/
@@ -782,7 +805,7 @@ footer{
 	padding-left: 1.5em;
 
 	background-color: var(--color-footer-background);
-	color:var(--color-text-second);
+	/* color:var(--color-text-second); */
 }
 
 
@@ -860,13 +883,30 @@ footer{
 	display: grid;
 }
 
+.helpen-graag button {
+	/* display: block; */
+	margin: 1em;
+	/* padding: 0.5em 0em 0.5em 0em; */
+
+	width: 20em;
+
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: start;
+
+	background-color: var(--color-third);
+	color: var(--color-text-second);
+
+	border-color: var(--color-main);
+	border-radius: 0.2em;
+}
+
 .helpen-graag ul {
 	display: block;
-	/* Block gekozen, zodat het onder elkaar blijft staan. Met flex komt het naast elkaar */
+	
 	list-style: none;
 
 	margin:0;
-	/* padding: 2em 1em; */
 	padding:0 1.2em 1em;
 
 	/* display: flex;
@@ -1018,6 +1058,8 @@ footer p {
 }
 
 footer a {
+	position: relative;
+
 	margin: 0;
 	padding: 0;
 
@@ -1027,6 +1069,27 @@ footer a {
 	font-weight: 400;
 	color: var(--color-text-second)
 }
+
+/* underline streepje */
+/* footer a::before {
+	content: "";
+	position: absolute;
+	left:0;
+  	right:0;
+  	bottom:-.125em;
+
+	height:.25em;
+  
+	background-color: var(--color-text-third);
+	border-radius:.125em;
+	  
+	transform-origin:right;
+	transform:scalex(0);
+	transition:transform .3s;
+}
+footer a:visited {
+	color:var(--color-text-second);
+} */
 
 
 
@@ -1055,11 +1118,14 @@ footer a {
 	header form input {
 		width: 80%;
 	}
+}
 
+@media screen and (max-width:1050px) {
 	header button span{
 		display: none;
 	}
 }
+
 
 
 @media screen and (max-width:1100px) {
