@@ -59,12 +59,12 @@
         <section class="artiest-tickets">
             <h1>Green Day Tickets</h1>
             <p>Alternative Rock</p>
-            <img src="images/green-day.jpg" alt="Afbeelding van Green Day artiesten">
+            <!-- <img src="images/green-day.jpg" alt="Afbeelding van Green Day artiesten"> -->
 
             <ul>
-                <li><a href="#">Home</a></li>
-				<li><a href="#">Muziek</a></li>
-				<li><a href="#">Alternative Rock</a></li>
+                <li><a href="#">Home / </a></li>
+				<li><a href="#">Muziek / </a></li>
+				<li><a href="#">Alternative Rock / </a></li>
 
 				<li><p>Green Day Tickets</p></a></li>
                 <!-- Mag een p als li? Want de laatste li is geen link -->
@@ -85,31 +85,31 @@
         </section>
 
         <!-- Evenementen -->
-        <section class="artiest-evenementen">
+        <section class="evenementen">
             <h2>EVENEMENTEN</h2>
-			<section>
+			<section class="evenementen-resultaten">
 				<h3>
 					3 Resultaten
 				</h3>
 			</section>
 
-			<section>
+			<section class="evenementen-nl">
 				<h3>Nederland</h3>
 				<p>1 EVENEMENTEN</p>
 
-				<section>
+				<section class="evenementen-arhnem1">
 				<p>Arnhem</p>
 				</section>
-				<section>
+				<section class="evenementen-arhnem2">
 				<p>Arnhem</p>
 				</section>
 			</section>
 
-			<section>
+			<section class="evenmenten-internationaal">
 				<h3>Internationale evenementen</h3>
 				<p>1 EVENEMENTEN</p>
 
-				<section>
+				<section class="evenementen-milaan">
 				<p>Milan, Italië</p>
 				</section>
 			</section>
@@ -214,7 +214,7 @@
             <button type="button">Toon minder</button>
         </section>
 
-        <section class="LOCATIE">
+        <section class="locatie">
             <h3>MAPS</h3>
 
 			<h3>BEREIKBAARHEID</h3>
@@ -241,27 +241,27 @@
 			<p>Volg ons</p>
 				<ul>
 					<li><a href="#">
-						<img src="images/blog.svg" alt="Blog app"/>
+						<img src="images/blog.svg" alt="Blog"/>
 						</a>	
 					</li>
 					<li><a href="#">
-						<img src="images/facebook.svg" alt="Facebook app"/>
+						<img src="images/facebook.svg" alt="Facebook"/>
 						</a>	
 					</li>
 					<li><a href="#">
-						<img src="images/twitter.svg" alt="Twitter app"/>
+						<img src="images/twitter.svg" alt="Twitter"/>
 						</a>	
 					</li>
 					<li><a href="#">
-						<img src="images/instagram.svg" alt="Instagram app"/>
+						<img src="images/instagram.svg" alt="Instagram"/>
 						</a>	
 					</li>
 					<li><a href="#">
-						<img src="images/linkedin.svg" alt="Linkedin app"/>
+						<img src="images/linkedin.svg" alt="Linkedin"/>
 						</a>	
 					</li>
 					<li><a href="#">
-						<img src="images/tiktok.svg" alt="Tiktok app"/>
+						<img src="images/tiktok.svg" alt="Tiktok"/>
 						</a>	
 					</li>
 				</ul>
@@ -271,11 +271,11 @@
 			<section class="onze-apps">
 					<ul>
 						<li><a href="#">
-							<img src="images/appstore.svg" alt="App Store app"/>
+							<img src="images/appstore.svg" alt="App Store"/>
 							</a>	
 						</li>
 						<li><a href="#">
-							<img src="images/googleplay.svg" alt="Google play app"/>
+							<img src="images/googleplay.svg" alt="Google Play "/>
 							</a>	
 						</li>
 					</ul>
@@ -286,8 +286,11 @@
 		<!-- <h3>Wij helpen je graag</h3> -->
 		<!-- <button data-toggle="collapse" data-target="#demo" aria-hidden="false">Wij helpen je graag</button> -->
 		<section class="helpen-graag">
-			<button aria-hidden="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
+			<!-- <button class="helpen-graag-dropbtn">Wij helpen je graag</button> -->
+			<!-- <h3>Wij helpen je graag</h3> -->
+			<button aria-expanded="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
 				<ul>
+					<!-- <ul class="helpen-graag-dropdown-content"> -->
 					<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
 					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
 					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
@@ -333,8 +336,6 @@
 				</a>	
 			</li>
 		</section>
-
-		<!-- De p's in de footer worden bij inspecteren als h3 genoemd? -->
 	</footer>
 
 		<script defer src="scripts/script.js"></script>
