@@ -42,7 +42,7 @@ var ticketKnop = document.getElementById("easterButton");
 ticketKnop.onclick = autoRij;
 
 function autoRij() {
-  console.log("hoi");
+  // console.log("hoi");
   var deAuto = document.getElementById("car");
   deAuto.classList.toggle("rijAuto");
 }

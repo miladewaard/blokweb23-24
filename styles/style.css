@@ -143,6 +143,9 @@ header > button:first-of-type {
 
 	padding-right: 5em;
 }
+header > button:first-of-type svg {
+	fill:var(--color-text-second);
+}
 
 
 /****************/
@@ -192,6 +195,9 @@ header form button {
 
 	cursor:pointer;
 }
+header form button svg {
+	fill:var(--color-text-second);
+}
 
 
 /****************/
@@ -210,25 +216,9 @@ header > button:last-of-type {
 
 	font-weight:400; 
 }
-
-/* button:last-of-type:active {
-	font-weight: 400;
-	de cursor geen handje wordt als je over de active link hovert 
-	cursor: default;
+header > button:last-of-type svg {
+	fill: var(--color-text-second);
 }
-button:last-of-type:hover:not(.active) {
-	als je over een link in het menu hovert (maar niet de actieve link) 
-	background-color:var(--link-visited-color);
-	color:var(--color-text-second);
-
-	padding: 0 0.5em;
-}
-
-button:last-of-type:focus {
-	links in het menu wordt onderstreept als je er met het toetsenbord naar tabt
-	text-decoration:underline;
-} */
-
 
 /****************/
 /* NAVIGATIE*/
@@ -287,8 +277,8 @@ header > section{
 	padding:1em;
 	
 	/* display:none; */
-	align-content:start;
-	gap:1em;
+	/* align-content:start; */
+	/* gap:1em; */
 	
 	position:fixed;
 	left:0;
@@ -314,24 +304,50 @@ header > section{
 
 .toonNav ul {
 	margin: 0;
-	padding: 0;
+	padding: 0.5em;
 	list-style: none;
 	align-items: center;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	gap: 1em;
+	gap: 1.5em;
 
 	background-color:var(--color-second);
 	font-weight: 400;
 	text-decoration: none;
 	color:var(--color-text-second);
 }
-
-a:visited {
+.toonNav a {
+	background-color: var(--color-second);
 	text-decoration: none;
+	outline: none;
+	color: var(--color-menu-item-text);
+
+	padding:0.5em;
+}
+.toonNav a:active {
+	font-weight: 400;
+	/* de cursor geen handje wordt als je over de active link hovert */
+	cursor: default;
+}
+.toonNav a:hover:not(.active) {
+	/* als je over een link in het menu hovert (maar niet de actieve link */
+	background-color:var(--link-visited-color);
+	color:var(--color-text-second);
+
+	text-decoration: underline;
+}
+/* .toonNav a:visited {
 	color: var(--color-text-second);
+} */
+
+.toonNav button {
+	background-color: var(--color-second);
+	padding-left: 0.5em;
+}
+.toonNav button svg {
+	fill: var(--color-text-second);
 }
 
 
@@ -583,17 +599,19 @@ main{
 }
 
 .recent-events button {
-	background-color: var(--color-main);
-	border-style: solid;
-	border-radius:  0.5em;
-	color: var(--color-text-third);
-
-	/* padding: 1em 8em 1em 8em; */
-	padding: 1em;
+	padding: 0.8em 1em 0.8em 1em;
 	display: inline-block;
 
 	text-align: center;
 	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	color: var(--color-text);
+	
+	background-color: var(--color-main);
+	border-style: solid;
+	border-color: var(--color-text-third);
+	border-radius:  0.5em;
 
 	cursor: pointer;
 }
@@ -919,8 +937,6 @@ footer > h3 {
 
 
 footer p {
-	
-
 	margin: 0;
 	padding: 1em;
 
@@ -1044,7 +1060,7 @@ details summary {
 }
 
 details svg path {
-	fill: white;
+	fill:var(--color-text-second);
 }
 details summary::after {
 	content: url(../images/arrow.svg);
@@ -1091,15 +1107,10 @@ details:nth-of-type(4) {
 
 	margin:0;
 	padding:0 1.2em 1em;
-
-	/* display: flex;
-	flex-wrap: wrap; */
-	/* justify-content: flex-start;
-	gap: 1em; */
+	/* padding: 0 1.5em 1em 0.5em; */
 }
 .helpen-graag li {
-	display: flex;
-	flex-wrap: wrap;
+	height: 2em;
 }
 
 .helpen-graag a {
@@ -1129,9 +1140,6 @@ footer .ook-hebben-wij {
 	padding:0 1.2em 1em;
 }
 .ook-hebben-wij li {
-	display: flex;
-	flex-wrap: wrap;
-	
 	height: 2em;
 }
 
@@ -1161,9 +1169,6 @@ footer .over-ons {
 	padding:0 1.2em 1em;
 }
 .over-ons li {
-	display: flex;
-	flex-wrap: wrap;
-
 	height: 2em;
 }
 
@@ -1183,16 +1188,12 @@ footer .zaken {
 	grid-row: 1/2;
 }
 .zaken ul {
-	display: block;
 	list-style: none;
 
 	margin: 0;
 	padding:0 1.2em 1em;
 }
 .zaken li {
-	display: flex;
-	flex-wrap: wrap;
-
 	height: 2em;
 }
 
