@@ -52,7 +52,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 1 - Typografie & kleur
 
 <details open>
-  <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt.<
+  <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt.
 
   CCS custom property is een tool die ervoor zorgt dat een waarden die herhaaldelijk voorkomt in één keer aangepast kunt worden door de waarden op één plek te definiëren en te kunnen wijzigen.
   
@@ -61,11 +61,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   </summary>
 
   ### Wat ik heb gedaan
-  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast in de HTML de eerste inhoud voor de header geplaatst.</summary>
+  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast heb ik in de HTML de eerste inhoud voor de header geplaatst.</summary>
 
-  <summary>Font toegepast: <img scr="readme-images/font-faces2.png" width="375px" alt="Fonts in de CSS"></summary>
-  <summary>Custom properties voor de kleuren gemaakt: <img scr="readme-images/custom-properties2.png" width="375px" alt="Custom properties"></summary>
-  <summary>Klein begin gemaakt aan de header: <img scr="readme-images/header-nav1.png" width="375px" alt="Eerste header informatie">
+  <summary>Font toegepast:  <img scr="readme-images/font-faces.png" width="375px" alt="Fonts in CSS">
+  <img scr="readme-images/font-faces2.png" width="375px" alt="Fonts in de CSS">
+  </summary>
+  <summary>Custom properties voor de kleuren gemaakt: 
+  <img scr="readme-images/custom-properties2.png" width="375px" alt="Custom properties">
+  </summary>
+  <summary>Klein begin gemaakt aan de header: 
+  <img scr="readme-images/header-nav1.png" width="375px" alt="Eerste header informatie">
   </summary>
 </details>
 
