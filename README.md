@@ -61,15 +61,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   </summary>
 
   ### Wat ik heb gedaan
-  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast heb ik in de HTML de eerste inhoud voor de header geplaatst.</summary>
+  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast heb ik in de HTML de eerste inhoud voor de header geplaatst.
 
-  <summary>Font toegepast:  <img scr="readme-images/font-faces.png" width="375px" alt="Fonts in CSS">
+  Font toegepast:
   <img scr="readme-images/font-faces2.png" width="375px" alt="Fonts in de CSS">
-  </summary>
-  <summary>Custom properties voor de kleuren gemaakt: 
+  
+  Custom properties voor de kleuren gemaakt: 
   <img scr="readme-images/custom-properties2.png" width="375px" alt="Custom properties">
-  </summary>
-  <summary>Klein begin gemaakt aan de header: 
+
+  Klein begin gemaakt aan de header: 
   <img scr="readme-images/header-nav1.png" width="375px" alt="Eerste header informatie">
   </summary>
 </details>
