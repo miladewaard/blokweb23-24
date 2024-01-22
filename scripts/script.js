@@ -37,6 +37,37 @@ function sluitNav() {
 
 
 
+
+/************************************/
+/* dropdown extra info */
+/************************************/
+
+// Functie oproepen om dropdown content te laten zien als je op de button klikt.
+function openDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Als je weer op of naast de button klikt na openen dan verdwijnt de dropdown content.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+/************************************/
+/* animatie button */
+/************************************/
+
 var ticketKnop = document.getElementById("easterButton");
 
 ticketKnop.onclick = autoRij;

@@ -85,49 +85,63 @@
         <!-- Evenementen -->
         <section class="evenementen">
             <h3>EVENEMENTEN</h3>
+
 			<section class="evenementen-resultaten">
-				<h4>
-					3 Resultaten
-				</h4>
+				<h4>3 Resultaten</h4>
 			</section>
 
 			<section class="evenementen-nl">
 				<h2>Nederland</h2>
-				<p>1 EVENEMENTEN</p>
-
-				<section class="evenementen-arhnem1">
+				<p>1 EVENEMENT</p>
+			</section>
+			<section class="evenementen-arhnem1">
+				<p>JUN 19</p>
+				<p>wo • 20:30</p>
 				<p>Arnhem</p>
-				</section>
-				<section class="evenementen-arhnem2">
-				<p>Arnhem</p>
-				</section>
+				<p>GelreDome</p>
+				<p>Green Day - The Saviors Tour</p>
 			</section>
 
-			<section class="evenmenten-internationaal">
-				<h2>Internationale evenementen</h2>
-				<p>1 EVENEMENTEN</p>
-
-				<section class="evenementen-milaan">
-				<p>Milan, Italië</p>
-				</section>
+			<section class="evenementen-arhnem2">
+				<p>JUN 19</p>
+				<p>wo • 20:30</p>
+				<p>Arnhem</p>
+				<p>GelreDome</p>
+				<p>Green Day - VIP Packages</p>
 			</section>
 		
 
-            <!-- ??????? Hoe erin zetten, is het een form of ul met grid? -->
+			<section class="evenementen-internationaal">
+				<h2>Internationale evenementen</h2>
+				<p>1 EVENEMENTEN</p>
+			</section>	
+			<section class="evenementen-milaan">
+				<p>JUN 16</p>
+				<p>zo • 17:00</p>
+				<p>Milan, Italië</p>
+				<p>Ippodromo SNAI La Maura</p>
+				<p>Green Day - The Saviors Tour</p>
+			</section>
+		</section>
+		
+
+            <!-- ??????? Hoe erin zetten? -->
         </section>
 
         <section class="extra-info">
             <h3>EXTRA INFO</h3>
                 <!-- uitklap menu -->
-                <ul>
+				<button onclick="openDropdown()" class="dropbtn">Ticketprijzen</button>
+                <ul id="myDropdown" class="dropdown-content">
                     <li>Ticketprijzen</li>
                     <li>VIP-pakken</li>
-                    <!-- Moet ik hier ook een p tussen zetten, zoals bij de ul "artiest-tickets"?-->
                 </ul>
+
+				<!-- Ik probeer hier een menu dropdown met andere code, even wat uitproberen. -->
         </section>
 
         <section class="type-ticket">
-            <img src="images/extra-info.jpg" alt="Afbeelding van type ticket">
+            <img src="images/extra-info.jpg" alt="type ticket">
 
             <h4>Ticketprijzen</h4>
             <p>Voor Green Day in GelreDome zijn verschillende soorten tickets beschikbaar:</p>
@@ -138,7 +152,9 @@
                 <li>Rang 1 - Zitplaatsen: €67,20</li>
             </ul>
 
-            <button type="button">Lees meer</button>
+			<p>Alle prijzen zijn inclusief service kosten</p>
+
+            <!-- <button type="button">Lees meer</button> -->
         </section>
 
         <section class="gallerij">
@@ -189,15 +205,15 @@
         <section class="over">
             <h3>OVER</h3>
 
-            <p>Green Day is een van 's werelds best verkopende bands aller tijden, met meer dan 75 miljoen verkochte platen 
-                wereldwijd en 10 miljard streams. De band heeft al vijf Grammy’s in ontvangst mogen nemen en is genomineerd 
-                voor de Rock and Roll Hall of Fame. Ze brachten in 1994 hun doorbraakalbum ‘Dookie’ uit. Dit album wordt algemeen 
+            <p> <strong>Green Day</strong> is een van 's werelds best verkopende bands aller tijden, met meer dan 75 miljoen verkochte platen 
+                wereldwijd en 10 miljard streams. De band heeft al vijf Grammy's in ontvangst mogen nemen en is genomineerd 
+                voor de Rock and Roll Hall of Fame. Ze brachten in 1994 hun doorbraakalbum 'Dookie' uit. Dit album wordt algemeen 
                 beschouwd als het populariseren en het laten herleven van de interesse in punkrock bij de mainstream, en het 
                 startte een lange reeks van #1 hitsingles. Entertainment Weekly noemt Green Day "de meest invloedrijke band van 
                 hun generatie", terwijl Rolling Stone zegt: "Green Day heeft meer jonge bands geïnspireerd om te beginnen dan 
                 welke act dan ook aan deze kant van Kiss, en dat lijkt niet te veranderen". In 2004 bracht Green Day de rockopera 
-                ‘American Idiot’ uit, waarmee zij de Grammy Award voor beste rockalbum in de wacht sleepte. Het dertiende studioalbum 
-                ‘Father Of All Motherfuckers’ werd uitgebracht in 2020 en debuteerde op nummer 1 in de Billboard Album Sales Chart 
+                'American Idiot' uit, waarmee zij de Grammy Award voor beste rockalbum in de wacht sleepte. Het dertiende studioalbum 
+                'Father Of All Motherfuckers' werd uitgebracht in 2020 en debuteerde op nummer 1 in de Billboard Album Sales Chart 
                 en op nummer 1 in zowel Groot-Brittannië als Australië.
             </p>
 
@@ -207,16 +223,14 @@
             </p>
 
             <p><em>Laatste update: november 2023</em></p>
-
-            <!-- button, toon meer/minder ?? -->
-            <button type="button">Toon minder</button>
+        
         </section>
 
         <section class="locatie">
+			<h3>LOCATIE</h3>
+
             <h4>MAPS</h4>
-
 			<h4>BEREIKBAARHEID</h4>
-
 			<h4>OOK BESCHIKBAAR</h4>
 
 			<img src="images/parkeer-gd.jpg" alt="Parkeertickets Green Day"/>
@@ -232,107 +246,121 @@
 
 
     <footer>
-		<img src="images/logo-white.png" alt="Beeldmerk"> <!--kleur foto  wijzigen-->
+		<section>
+			<img src="images/logo-white.png" alt="Beeldmerk">
 
-		<!-- Mag een section zonder h1/h2/h3 worden gebruikt? -->
-		<section class="social-media">
-			<p>Volg ons</p>
-				<ul>
-					<li><a href="#">
-						<img src="images/blog.svg" alt="Blog"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/facebook.svg" alt="Facebook"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/twitter.svg" alt="Twitter"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/instagram.svg" alt="Instagram"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/linkedin.svg" alt="Linkedin"/>
-						</a>	
-					</li>
-					<li><a href="#">
-						<img src="images/tiktok.svg" alt="Tiktok"/>
-						</a>	
-					</li>
-				</ul>
-		</section>
-
-		<p>Download onze Apps</p>
-			<section class="onze-apps">
+			<section class="social-media">
+				<p>Volg ons</p>
 					<ul>
 						<li><a href="#">
-							<img src="images/appstore.svg" alt="App Store"/>
+							<img src="images/blog.svg" alt="Blog"/>
 							</a>	
 						</li>
 						<li><a href="#">
-							<img src="images/googleplay.svg" alt="Google Play "/>
+							<img src="images/facebook.svg" alt="Facebook"/>
+							</a>	
+						</li>
+						<li><a href="#">
+							<img src="images/twitter.svg" alt="Twitter"/>
+							</a>	
+						</li>
+						<li><a href="#">
+							<img src="images/instagram.svg" alt="Instagram"/>
+							</a>	
+						</li>
+						<li><a href="#">
+							<img src="images/linkedin.svg" alt="Linkedin"/>
+							</a>	
+						</li>
+						<li><a href="#">
+							<img src="images/tiktok.svg" alt="Tiktok"/>
 							</a>	
 						</li>
 					</ul>
 			</section>
 
-		<p>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="https://www.ticketmaster.nl/help/termsandconditions.html?language=nl-nl">voorwaarden voor gebruik</a></p>
+	
+				<section class="onze-apps">
+					<p>Download onze Apps</p>
+						<ul>
+							<li><a href="#">
+								<img src="images/appstore.svg" alt="App Store"/>
+								</a>	
+							</li>
+							<li><a href="#">
+								<img src="images/googleplay.svg" alt="Google Play "/>
+								</a>	
+							</li>
+						</ul>
+				</section>
 
-		<!-- <h3>Wij helpen je graag</h3> -->
-		<!-- <button data-toggle="collapse" data-target="#demo" aria-hidden="false">Wij helpen je graag</button> -->
-		<section class="helpen-graag">
-			<!-- <button class="helpen-graag-dropbtn">Wij helpen je graag</button> -->
-			<!-- <h3>Wij helpen je graag</h3> -->
-			<button aria-expanded="true">Wij helpen je graag<svg class="BaseSvg-sc-yh8lnd-0 ChevronIcon___StyledBaseSvg-sc-1y4em6t-0 ckLyyv sc-1hdmn1n-4 dtQfAK" viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8 3.47 8.26Z"></path></svg></button>
-				<ul>
-					<!-- <ul class="helpen-graag-dropdown-content"> -->
-					<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
-					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
-					<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/annuleringsverzekering/?language=nl-nl">Verzekering</a></li>
-				</ul>
-		</section>	
-
-		<section class="ook-hebben-wij">
-			<h3>Wat wij ook hebben</h3>
-				<ul>
-					<li><a href="https://www.ticketmaster.nl/feature/collectorcard/?language=nl-nl">Collector Cards</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/alpine/">Gehoorbescherming</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/cadeaukaart/?language=nl-nl">Cadeaukaart</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/platinumtickets/?language=nl-nl">Platinum Tickets</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/?language=nl-nl">Doorverkoop</a></li>
-				</ul>	
+			<p>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="https://www.ticketmaster.nl/help/termsandconditions.html?language=nl-nl">voorwaarden voor gebruik</a></p>
 		</section>
 
-		<section class="over-ons">
-			<h3>Over ons</h3>
+		<details>
+			<summary>Wij helpen je graag</summary>
+				
+			<section class="helpen-graag">
 				<ul>
-					<li><a href="#">Branding</a></li> 
-					<!-- De link naar "Branding" was een beveiligde link, dus die heb ik er niet in gezet.-->
-					<li><a href="https://www.ticketmaster.nl/feature/vacatures/?language=nl-nl">Vacatures</a></li>
-				</ul>	
-			<h3>Doe zaken met ons</h3>
-				<ul>
-					<li><a href="https://business.ticketmaster.nl/adverteren/">Adverteren</a></li>
-					<li><a href="https://www.ticketmaster.nl/feature/affiliates/?language=nl-nl">Affiliate worden</a></li>
-					<li><a href="https://business.ticketmaster.nl">Zelf een event organiseren</a></li>
-				</ul>
-		</section>
+						<li><a href="https://help.ticketmaster.nl/hc/nl">Help</a></li>
+						<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Afgelaste events</a></li>
+						<li><a href="https://www.ticketmaster.nl/help/afgelaste-en-verplaatste-events/?language=nl-nl">Verschoven events</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/annuleringsverzekering/?language=nl-nl">Verzekering</a></li>
+					</ul>
+			</section>	
+		</details>
+
+		<details>
+			<summary>Wat wij ook hebben</summary>
+
+			<section class="ook-hebben-wij">
+					<ul>
+						<li><a href="https://www.ticketmaster.nl/feature/collectorcard/?language=nl-nl">Collector Cards</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/alpine/">Gehoorbescherming</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/cadeaukaart/?language=nl-nl">Cadeaukaart</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/platinumtickets/?language=nl-nl">Platinum Tickets</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/tickets-doorverkopen/?language=nl-nl">Doorverkoop</a></li>
+					</ul>	
+			</section>
+		</details>
+
+		<details>
+			<summary>Over ons</summary>
+
+			<section class="over-ons">
+					<ul>
+						<li><a href="#">Branding</a></li> 
+						<!-- De link naar "Branding" was een beveiligde link, dus die heb ik er niet in gezet.-->
+						<li><a href="https://www.ticketmaster.nl/feature/vacatures/?language=nl-nl">Vacatures</a></li>
+					</ul>	
+			</section>
+		</details>
+
+		<details>
+			<summary>Doe zaken met ons</summary>
+
+			<section class="zaken">
+					<ul>
+						<li><a href="https://business.ticketmaster.nl/adverteren/">Adverteren</a></li>
+						<li><a href="https://www.ticketmaster.nl/feature/affiliates/?language=nl-nl">Affiliate worden</a></li>
+						<li><a href="https://business.ticketmaster.nl">Zelf een event organiseren</a></li>
+					</ul>
+			</section>
+		</details>
 			
 		<h3>Ons Netwerk</h3>
 
 		<section class="ons-netwerk">
-			<li><a href="#">
-				<img src="images/mojo.svg" alt="Mojo netwerk"/>
-				</a>	
-			</li>	
-			<li><a href="#">
-				<img src="images/livenation.svg" alt="Live nation netwerk"/>
-				</a>	
-			</li>
+			<ul>
+				<li><a href="#">
+					<img src="images/mojo.svg" alt="Mojo netwerk"/>
+					</a>	
+				</li>	
+				<li><a href="#">
+					<img src="images/livenation.svg" alt="Live nation netwerk"/>
+					</a>	
+				</li>
+			</ul>	
 		</section>
 	</footer>
 

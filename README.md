@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home screen 
-  <img src="readme-images/mobiel-homescreen.jpg" width="375px" alt="home pagina van ticketmaster">
+  <img src="readme-images/mobiel-homescreen.jpg" width="375px" alt="Home pagina van ticketmaster">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Artiest  
-  <img src="readme-images/mobiel-artiest.jpg" width="375px" alt="inhoudelijke informatie over de artiest en het evenement">
+  <img src="readme-images/mobiel-artiest.jpg" width="375px" alt="Inhoudelijke informatie over de artiest en het evenement">
  
 </details>
 
@@ -52,17 +52,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 1 - Typografie & kleur
 
 <details open>
-  <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt. 
+  <summary>In de eerste week hebben we kennisgemaakt met typografie & kleur. Daarnaast hebben we geleerd over hoe een custom property werkt.<
 
   CCS custom property is een tool die ervoor zorgt dat een waarden die herhaaldelijk voorkomt in één keer aangepast kunt worden door de waarden op één plek te definiëren en te kunnen wijzigen.
+  
+  Anatomie van een CSS custom property:
+  <img scr="readme-images/custom-property.png" width="375px" alt="Anatomie van een CSS custom property">
+  </summary>
 
-  :root {
-	  --merk-kleur: blue;
-  }
+  ### Wat ik heb gedaan
+  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast in de HTML de eerste inhoud voor de header geplaatst.</summary>
 
-  h1, h2, h3 {
-	  color : var(--merk-kleur);
-  }
+  <summary>Font toegepast: <img scr="readme-images/font-faces2.png" width="375px" alt="Fonts in de CSS"></summary>
+  <summary>Custom properties voor de kleuren gemaakt: <img scr="readme-images/custom-properties2.png" width="375px" alt="Custom properties"></summary>
+  <summary>Klein begin gemaakt aan de header: <img scr="readme-images/header-nav1.png" width="375px" alt="Eerste header informatie">
   </summary>
 </details>
 
@@ -71,7 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 2 - Toegankelijkheid + Breakdownschets
 
 <details open>
-  <summary>In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
+  <summary>In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van  een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
 
   Na het symposium is mijn besef over toegankelijkheid veel groter geworden en begrijp ik beter waarom en voor wie ik een website ga ontwerpen. 
 
@@ -79,16 +82,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook hebben we uitleg gekregen over het gebruik van grid en hiermee geoefend. 
   Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
-  
-  <img src="readme-images/grid.png" width="375px" alt="grid uitleg">
 
+  <img src="readme-images/grid.png" width="375px" alt="Grid uitleg">
+  </summary>
+
+  <summary>
   Verder kregen we kort uitleg over media query, dit is een tool om de workflow te verbeteren. Bijvoorbeeld: 
 
-  @media (width > 48 em) {
-	p {
-	 column-count: 2;
-	 column-gap: 2em;
-	}
+  <img src="readme-images/media-query.png" width="375px" alt="Anatomie van een media query">
 
   Als de media width groter wordt dan 48em dan komen de paragrafen in 2 kolommen te staan.
   </summary>
@@ -123,20 +124,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets
 
 <details open>
-  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd. *Dit zijn de breakdownschetsen tot nu toe!</summary>
+  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd.</summary>
 
   ### De hele home pagina: 
-  <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="Breakdown van de hele pagina">
 
   ### Dynamisch deel menu: 
-  <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets-menu.jpg" width="375px" alt="Breakdown van een dynamisch deel">
 
   ### Dynamisch deel footer: 
-  <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="Breakdown van nog een dynamisch deel">
 
   ### De hele artiest(en) pagina: 
-  <img src="readme-images/breakdownschets-artiestpagina.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-artiestpagina.jpg" width="375px" alt="Breakdown van de hele pagina">
 </details>
+
+
+  ### Wat ik heb gedaan
+  <summary>Eerste twee weken ben ik bezig geweest met het vullen van de html inhoud. Door het volgen van de breakdownschets en door alle afbeeldingen en iconen te verzamelen.</summary>
+
+  <summary>Header aangevuld: <img src="readme-images/header-nav2.png" width="375px" alt="header informatie"></summary>
+  <summary>Een deel van de main inhoud: <img src="readme-images/main-highlights1.png" width="375px" alt="Eerste stuk inhoud over het kopje 'highlights"></summary>
+
+  
+
+
 
 
 

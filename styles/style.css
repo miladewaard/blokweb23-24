@@ -33,6 +33,7 @@ button:not(disabled) {
 	--color-text-second: #ffffff;
 	--color-text-third: #b3b3b3;
 	--color-text-fourth:var(--color-second);
+	--color-text-fifth: slategrey;
 
 	--color-background:var(--color-main);
 	--color-header-background:var(--color-second);
@@ -917,22 +918,30 @@ footer img {
 	padding: 4em 1em 3em 1em;
 }
 
-footer h3 {
+/* footer h3 {
 	grid-column: 2/3;
 	grid-row: 1/2;
 	margin: 0;
-	padding: 1em;
+	padding: 2.5em 0em 0em 0.8em;
 
 	display: block;
 
-	text-align: start;
+	text-align: center;
 	font-weight: 400;
-	/* font-size: 4em; */
+	font-size: 4em;
 	color: var(--color-text-second);
-}
+} */
 footer > h3 {
 	grid-column: 1/6;
 	grid-row: 2/3;
+
+	margin: 0;
+	padding: 2.5em 0em 0em 0.8em;
+
+	text-align: start;
+	/* text-align: center; */
+	font-weight: 400;
+	color: var(--color-text-second);
 }
 
 
@@ -1095,7 +1104,6 @@ details:nth-of-type(4) {
 
 
 
-
 .helpen-graag {
 	display: grid;
 }
@@ -1218,8 +1226,8 @@ footer .ons-netwerk {
 }
 
 .ons-netwerk ul {
-	margin:0;
-	padding: 1.5em 1em 0.5em;
+	margin: 0;
+	padding: 1em 0em 3em 0em;
 	list-style:none;
 
 	display: flex;
@@ -1233,11 +1241,6 @@ footer .ons-netwerk {
 	flex-direction:column;
 }
 
-.ons-netwerk h3 {
-	display: block;
-
-}
-
 .ons-netwerk a {
 	text-decoration: none;
 }
@@ -1245,7 +1248,8 @@ footer .ons-netwerk {
 .ons-netwerk img {
 	display: block;
 
-	padding: 0.5em 0.5em 0.5em 0.5em;
+	padding: 0.5em;
+
 	width: 6rem;
 	height: auto;
 	gap: 1em;
@@ -1349,15 +1353,18 @@ a:active {
 /* SCROLL MENU */
 /*********************/
 .scroll-menu {
-	display: grid;
+	display: flex;
 }
 
 .scroll-menu ul {
 	display: flex;
-	justify-content: space-evenly;
-	gap: 1em;
+	flex-direction: row;
+	/* justify-content: space-evenly; */
+	gap: 2.5em;
 
 	/* padding: 0em 1em  0em 1em; */
+	padding-left: 2em;
+	align-items: center;
 
 	list-style: none;
 	background-color: white;
@@ -1368,7 +1375,7 @@ a:active {
 }
 
 .scroll-menu button {
-	padding: 1em 0em  1em 0em;
+	padding: 1em 0;
 	background-color: white;
 	color: slategray;
 
@@ -1399,11 +1406,11 @@ a:active {
 /* ARTIEST EVENEMENTEN */
 /*********************/
 .evenementen {
-	display: block;
+	display: grid;
 }
 
 .evenementen h3 {
-	display: block;
+	/* display: block; */
 	
 	padding: 2em 1em 1em 1.5em;
 	text-align: start;
@@ -1413,13 +1420,435 @@ a:active {
 }
 
 .evenementen-resultaten {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+
 	
 	padding: 0em 0em 1em 2em;
 	text-align: start;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 400;
 }
+.evenementen-resultaten h4 {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+
+	padding: 1em;
+	width: 40em;
+
+	align-items: center;
+	background-color: darkorchid;
+}
+/* Hoezo bij de "evenementen-nl h2" wel een margin om links van de rand te komen en bij ^"evenementen h4" niet? */
+/* Ik gebruik even andere kleuren om het stylen beter te zien. */
+
+.evenementen-nl {
+	display: grid;
+	/* Iets met grid-template-columns */
+}
+.evenementen-nl h2 {
+	margin-left: 2em;
+	padding: 1em;
+	width: 40em;
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+.evenementen-nl p {
+	margin-left: 2em;
+	padding: 0em 1em;
+	width: 40em;
+
+	background-color: lavender;
+	/* border-style: solid;
+	border-color: slategray; */
+	/* Ik gebruik even andere kleuren om het stylen beter te zien. */
+
+	font-size: 1em;
+	color:var(--color-text-fifth);
+}
+.evenementen-arhnem1 {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 2em;
+	padding: 1em;
+	width: 40em;
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+.evenementen-arhnem1 p:first-of-type {
+	text-align: start;
+}
+.evenementen-arhnem1 p:nth-of-type(2) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+.evenementen-arhnem1 p:nth-of-type(3) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-arhnem1 p:nth-of-type(4) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-arhnem1 p:nth-of-type(5) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+
+.evenementen-arhnem2 {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 2em;
+	padding: 1em;
+	width: 40em;
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+.evenementen-arhnem2 p:first-of-type {
+	text-align: start;
+}
+.evenementen-arhnem2 p:nth-of-type(2) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+.evenementen-arhnem2 p:nth-of-type(3) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-arhnem2 p:nth-of-type(4) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-arhnem2 p:nth-of-type(5) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+
+.evenementen-internationaal {
+	/* margin-left: 2em; */
+	margin: 1em 0em 0em 2em;
+	padding: 1em 0em 0em 1em;
+	width: 40em;
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+
+.evenementen-internationaal h2 {
+	padding: 0em 0em 1em 0em;
+	/* width: 40em; */
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+.evenementen-internationaal p {
+	/* margin-left: 2em; */
+	/* padding: 0em 1em; */
+	/* Hoezo is dit in principe  "hetzelfde" blokje als bij NL maar moet toch anders worden gestyld? */
+	padding: 0em 0em 1em 0em;
+	/* width: 40em; */
+
+	background-color: lavender;
+
+	font-size: 1em;
+	color:var(--color-text-fifth);
+}
+.evenementen-milaan {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0em 0em 5em 2em;
+	padding: 1em;
+	width: 40em;
+
+	background-color: lavender;
+
+	font-size: 1em;
+}
+.evenementen-milaan p:first-of-type {
+	text-align: start;
+}
+.evenementen-milaan p:nth-of-type(2) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+.evenementen-milaan p:nth-of-type(3) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-milaan p:nth-of-type(4) {
+	padding: 0em 0em 0.3em 6em;
+
+	font-weight: 700;
+}
+.evenementen-milaan p:nth-of-type(5) {
+	padding: 0em 0em 0.3em 6em;
+	color:var(--color-text-fifth);
+}
+
+
+
+/*********************/
+/* ARTIEST EXTRA INFO
+/*********************/
+.extra-info {
+	/* display: grid; */
+	display: inline-block;
+	position: relative;
+
+	background-color: var(--color-third);
+}
+
+.extra-info h3 {
+	/* display: block; */
+	
+	padding: 2em 1em 1em 1.5em;
+	text-align: start;
+
+	font-weight:700;
+	color: var(--color-text-second);
+}
+
+/* Poging tot dropdown */
+.dropbtn {
+	background-color: var(--color-main);
+	color:var(--color-third);
+
+	margin-left: 2em;
+	padding: 1em;
+	width: 25em;
+	height: 3em;
+	/* align-items: center; */
+
+	text-align: start;
+	font-weight: 400;
+	border: none;
+	cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+	background-color: var(--color-second);
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+	z-index: 1;
+}
+.dropdown-content li {
+	display: block;
+	
+	margin-left: 2em;
+	padding: 1em;
+	width: 25em;
+	height: 3em;
+
+	list-style: none;
+	color: var(--color-third);
+}
+.dropdown li:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/*********************/
+/* ARTIEST EXTRA INFO TYPE TICKET
+/*********************/
+
+.type-ticket {
+	margin: 0;
+	padding: 8em 0em 5em 2em;
+	
+	background-color: var(--color-third);
+}
+.type-ticket h4 {
+	padding: 1em;
+	width: 21em;
+
+	align-items: center;
+	background-color: var(--color-text-second);
+
+	font-size: 1.2rem;
+}
+.type-ticket p:first-of-type {
+	padding: 0em 1.5em;
+	width: 25em;
+
+	align-items: flex-start;
+	background-color: var(--color-text-second);
+}
+.type-ticket ul {
+	padding: 1em 1.5em 1em 4em;
+	width: 25em;
+	/* height: 1em; */
+
+	list-style: circle;
+	background-color: var(--color-text-second);
+}
+.type-ticket p:last-of-type {
+	padding: 0em 1.5em 1.5em 1.5em;
+	width: 25em;
+
+	align-items: flex-start;
+	background-color: var(--color-text-second);
+}
+
+
+
+
+/*********************/
+/* ARTIEST GALLERIJ */
+/*********************/
+.gallerij {
+	display: grid;
+	
+	background-color: var(--color-main);
+}
+
+.gallerij h3 {
+	/* display: block; */
+	
+	padding: 2em 1em 1em 1.5em;
+	text-align: start;
+
+	font-weight:700;
+	color: var(--color-third);
+}
+
+.gallerij h4{ 
+	display: block;
+	min-height: 1rem;
+	margin:.50rem;
+
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--color-text);
+	text-decoration: none;
+	/* Waarom werkt de none decoration niet */
+}
+.gallerij h4:hover {
+	color:var(--link-hover-color);
+	text-decoration: underline;
+}
+.gallerij h4:active {
+	color:var(--link-active-color);
+}
+
+.gallerij ul {
+	margin:0;
+	padding:0 1.5em 1.5em;
+	list-style:none;
+
+	/* display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
+	gap:var(--default-gap); */
+	
+	display: flex;
+	gap:var(--default-gap);
+	/*Bij desktop wil ik grid, maar bij mobile device heb ik flexbox nodig??  */
+
+	/* Carrousel*/
+	overflow-x: auto;
+	/* om een kind te laten snappen */
+	scroll-snap-type: x mandatory;
+	/* om te voorkomen dat bij het einde van de ul de body gaat scrollen */
+  	/* daarmee zou de 'back' of 'forward' functie geactiveerd worden */
+  	/* en nu dus niet */
+	overscroll-behavior: contain auto;
+}
+.gallerij li {
+	flex-basis: 28em;
+	flex-shrink:0;
+	align-items:center;
+	gap: 0.25em;
+
+	/* een kind geeft aan waar 't snapt */
+	scroll-snap-align: center;
+
+	/* de elementen in de li flexen weer verticaal */
+	/* maar nu in omgekeerde volgorde */
+
+	display: flex;
+	flex-direction:column-reverse;
+	/* Wat betekent colum-reverse? */
+  	justify-content:flex-end;
+}
+
+.gallerij img {
+	width: 100%;
+}
+
+
+
+/*********************/
+/* ARTIEST OVER */
+/*********************/
+.over {
+	display: grid;
+	
+	background-color: var(--color-main);
+}
+
+.over h3 {
+	/* display: block; */
+	
+	padding: 2em 1em 1em 1.5em;
+	text-align: start;
+
+	font-weight:700;
+	color: var(--color-third);
+}
+
+.over p {
+	display: inline-block;
+
+	/* flex-wrap: wrap; */
+	
+	padding: 0em 1.5em 1em 1.5em;
+
+	text-align: start;
+	font-weight: 400;
+}
+
+
+
+/*********************/
+/* ARTIEST LOCATIE */
+/*********************/
+.loactie {
+	display: grid;
+	
+	background-color: var(--color-main);
+}
+
+.locatie h3 {
+	/* display: block; */
+	
+	padding: 2em 1em 1em 1.5em;
+	text-align: start;
+
+	font-weight:700;
+	color: var(--color-third);
+}
+
+
 
 
 
@@ -1556,8 +1985,15 @@ main > img {
 		display: flex;
 		flex-direction: column;
 		padding-left: 0;
-
 	}
+
+	/* Poging tot responsive maken */
+	/* .footer > h3 {
+		text-align: start;
+	}
+	.ons-netwerk img {
+		justify-content: flex-start;
+	} */
 
 	details summary {
 		width: 90%;
@@ -1568,20 +2004,15 @@ main > img {
 	}
 }
 
+
+
 @media screen and (max-width:1050px) {
 	header button span{
 		display: none;
 	}
 }
 
-/* @media screen  and (min-width: 712px) {
-	.recent-events ul {
-		display: flex;
-		flex-direction: column;
 
-		overflow-x: scroll;
-	}
-} */
 
 @media screen and (max-width:1100px) {
 	header nav ul li:nth-of-type(6) {
