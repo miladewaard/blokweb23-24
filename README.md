@@ -61,7 +61,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   </summary>
 
   ### Wat ik heb gedaan
-  <summary>In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast heb ik in de HTML de eerste inhoud voor de header geplaatst.
+  <summary>
+  In de eerste week een website gekozen -dit werd Ticketmaster- en daarna een klein begin gemaakt door het juiste font en kleuren in de stylesheet te zetten. Daarnaast heb ik in de HTML de eerste inhoud voor de header geplaatst.
 
   Font toegepast:
   <img scr="readme-images/font-faces2.png" width="375px" alt="Fonts in de CSS">
@@ -79,14 +80,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 2 - Toegankelijkheid + Breakdownschets
 
 <details open>
-  <summary>In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van  een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
+  <summary>
+    In deze week heb ik het symposium over toegankelijkheid gevolgd. De kern van het verhaal is dat bij het maken en ontwikkelen van  een ontwerp toegankelijkheid erg essentieel is, zodat mensen met een permanente, tijdelijke of situatie gebaseerde beperking ook zo aangenaam mogelijk een dienst/product kunnen gebruiken. Volg de Web Content Accessibility Guidelines (WCAG), maar betrek vooral de gebruikers! Het gaat om Inlcusive Design.
 
-  Na het symposium is mijn besef over toegankelijkheid veel groter geworden en begrijp ik beter waarom en voor wie ik een website ga ontwerpen. 
+    Na het symposium is mijn besef over toegankelijkheid veel groter geworden en begrijp ik beter waarom en voor wie ik een website ga ontwerpen. 
 
-  In de les hebben we uitleg gekregen over hoe je de toegankelijkheid van je website test door middel van een screenreading. De toegankelijkheid van een website is namelijk één van de belangrijkste richtlijnen voor het maken van een website.
+    In de les hebben we uitleg gekregen over hoe je de toegankelijkheid van je website test door middel van een screenreading. De toegankelijkheid van een website is namelijk één van de belangrijkste richtlijnen voor het maken van een website.
 
-  Ook hebben we uitleg gekregen over het gebruik van grid en hiermee geoefend. 
-  Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
+    Ook hebben we uitleg gekregen over het gebruik van grid en hiermee geoefend. 
+    Grid is een vlakverdeling om dingen op hun plaats te leggen en niet gaan zweven op de pagina.
 
   <img src="readme-images/grid.png" width="375px" alt="Grid uitleg">
   </summary>
@@ -104,7 +106,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2
 
 <details open>
-  <summary>De toegankelijkheid van de website heb ik getest met de functie voice over (VO) en keyboard only (KO). Daarnaast is er de Web Content Accessibility Guidelines (WCAG) dit is een document met richtlijnen om te voldoen aan de toegankelijkheid van een website. Echter als deze richtlijnen allemaal zijn behaald betekent het nog steeds niet dat je website volledig toegankelijk is, de gebruiker speelt ook nog een essentiële rol..</summary>
+  <summary>
+  De toegankelijkheid van de website heb ik getest met de functie voice over (VO) en keyboard only (KO). Daarnaast is er de Web Content Accessibility Guidelines (WCAG) dit is een document met richtlijnen om te voldoen aan de toegankelijkheid van een website. Echter als deze richtlijnen allemaal zijn behaald betekent het nog steeds niet dat je website volledig toegankelijk is, de gebruiker speelt ook nog een essentiële rol.
+  </summary>
 
   ### Bevindingen
   -	VO en KO wordt in het Nederlands gegeven, maar met een Engels accent.
@@ -129,7 +133,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets
 
 <details open>
-  <summary>Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd.</summary>
+  <summary>
+  Een breakdownschets maken van een website pagina geeft je overzicht van alle html-elementen waaruit de website is opgebouwd.
+  </summary>
 
   ### De hele home pagina: 
   <img src="readme-images/breakdownschets-homepagina.jpg" width="375px" alt="Breakdown van de hele pagina">
@@ -141,35 +147,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdownschets-footer.jpg" width="375px" alt="Breakdown van nog een dynamisch deel">
 
   ### De hele artiest(en) pagina: 
-  <img src="readme-images/breakdownschets-artiestpagina.jpg" width="375px" alt="Breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-artiestagina.jpg" width="375px" alt="Breakdown van de hele pagina">
 </details>
 
 
   ### Wat ik heb gedaan
-  <summary>Eerste twee weken ben ik bezig geweest met het vullen van de html inhoud. Door het volgen van de breakdownschets en door alle afbeeldingen en iconen te verzamelen.</summary>
+  <summary>
+  Eerste twee weken ben ik bezig geweest met het vullen van de html inhoud. Door het volgen van de breakdownschets en door alle afbeeldingen en iconen te verzamelen.
 
-  <summary>Header aangevuld: <img src="readme-images/header-nav2.png" width="375px" alt="header informatie"></summary>
-  <summary>Een deel van de main inhoud: <img src="readme-images/main-highlights1.png" width="375px" alt="Eerste stuk inhoud over het kopje 'highlights"></summary>
+  <summary>
+  Header aangevuld.
+  <img src="readme-images/header-nav2.png" width="375px" alt="header informatie">
 
-  
-
-
+  Een deel van de main inhoud.
+  <img src="readme-images/main-highlights1.png" width="375px" alt="Eerste stuk inhoud over het kopje 'highlights">
+  </summary>
 
 
 
 ## Week 3 - Flexbox + Voortgang 1
 
 <details open>
-  <summary>De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item). Bijvoorbeeld:
+  <summary>
+  De les van deze week ging over flexbox. Dit gebruik je om items (blok elementen) te “flexen”, oftewel hoe je ze ten opzichte van elkaar neer wil zetten. Van nature staan blok elementen onder elkaar en door te “flexen” kun je dit veranderen. Verder bestaat een flexbox uit een parent (flex-container) en een child (flex-item). Bijvoorbeeld:
 
   <img src="readme-images/flexbox-uitleg.png" width="375px" alt="Code voor om flexbox toe te passens">
 
   Ook heb ik vanuit de flexbox presentatie uitleg gekregen hoe je een combinatie van een foto en een tekst een link kan maken in html.
 
     a href= “#”
-	    <h3></h3>
-	    <h4></h4>
-	    <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
+      <h3></h3>
+      <h4></h4>
+      <img scr=”images/hoi.png” alt=”Het alternatief als er geen plaatje zou zijn”>
     /a
   </summary>
 </details>
@@ -178,21 +187,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1
 
 <details open>
-  <summary>Het voortgangsgesprek ging vooral over de breakdownschets. De student-assistent heeft mijn vragen kunnen beantwoorden, waardoor ik als gevolg een start kon maken aan het schrijven van mijn code.</summary>
+  <summary>
+  Het voortgangsgesprek ging vooral over de breakdownschets. De student-assistent heeft mijn vragen kunnen beantwoorden, waardoor ik als gevolg verder kon met het maken van de HTML inhoud. Verder heb ik uitleg gekregen hoe ik gemakkelijk images kan downloaden van de website.
+  </summary>
 
   ### Stand van zaken
-  Wat ik qua HTML had gedaan was een begin aan de navigatie.
-  <img src="readme-images/header-nav-eerste-begin.png" width="375px" alt="Mijn eerste html begin van de navigatie in de header.">
+  <summary> 
+  Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik een begin gemaakt met het verzamelen van zo veel mogelijk inhoud voor de main en footer.
+  </summary>
 
-  <summary> Buiten de les ben ik bezig geweest met het uitbreiden, verbeteren van de header. Ook heb ik zo veel mogelijk alle inhoud voor de body verzameld en erin gezet.</summary>
 
-  <summary>Header</summary>
-  <img src="readme-images/header-nav1.png" width="375px" alt="Eerste code over de navigatie en met name de search bar.">
-  <summary>De search bar in de header geplaatst (Bron: 3)</summary>
+  <summary>
+  Search bar in de header geplaatst.
+  <img src="readme-images/header-nav1.png" width="375px" alt="Search bar">
+  (Bron: https://www.youtube.com/watch?v=9hnJsNIBq1g)
 
-  <summary>Main</summary>
+  Main inhoud, waar ik van een image en tekst één link heb kunnen maken.
+  <img src="readme-images/main-populair1.png" width="375px" alt="Stukje code main over het kopje populair.">
+
   <img src="readme-images/main-aanbevolen1.png" width="375px" alt="Stukje code main over het kopje aanbevolen.">
-  <summary>Hier heb ik van een image en tekst één link kunnen maken. (Bron: presentatie over flexbox).</summary>
+  (Bron: presentatie over flexbox).
+
+  Allereerste footer inhoud. Niet veel, alleen kopjes. Blijkbaar twijfelde ik nog over hoe ik de links erin moest zetten.
+  <img src="readme-images/footer1.png" width="375px" alt="Footer inhoud.">
+  </summary>
 </details>
 
 
@@ -200,11 +218,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 4 - JS 3-stap
 
 <details open>
-  <summary>Deze week ging over JavaScript. JavaScript helpt om nog efficiënter code te schrijven en om html-elementen met elkaar te laten werken.
+  <summary>
+  Deze week ging over JavaScript. JavaScript helpt om nog efficiënter code te schrijven en om html-elementen met elkaar te laten werken.
   Door middel van document object model (DOM) refereer je naar het html-element. En om de CSS erbij te betrekken doe je dat met de document.querySelector in de JS, die selecteert het overeenkomende element uit de CSS. Daarnaast kun je met de add.Eventlistener een functie laten uitvoeren. Als laatst kun je dit controleren in de console van een browser, die kijkt voor eventuele fouten. Voorbeeld:
+
+  <img src="readme-images/js.jpg" width="375px" alt="Uitleg over JavaScript">
+  Bron: https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
   </summary>
 
-  <img src="readme-images/js.jpg" width="375px" alt="Screenshot van uitleg over JavaScript"><summary>Bron: 1</summary>
+  ### Wat ik heb gedaan
+  <summary>
+  Na dat ik de eerste HTML pagina helemaal inhoud heb gegeven kon ik een begin maken met de CSS. Echter had ik deze week niet heel veel gedaan.
+
+  Eerste CSS voor de header en main:
+  <img src="readme-images/css-header1.png" width="375px" alt="Eerste styling van de header.">
+
+  <img src="readme-images/css-main1.png" width="375px" alt="Eerste styling van de main.">
+
+  Waar ik voornamelijk vastliep hoe de grid kon toe passen op verschilldende schermbreedte. Eigenlijk dat het responisve werd. Daarnaast vond ik het lastig om uüberhaupt op de juiste elementen te komen.
+  </summary>
 </details>
 
 
