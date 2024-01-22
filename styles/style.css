@@ -440,8 +440,7 @@ main{
 }
 .highlights-events li {
 	display: flex;
-	flex-direction:column-reverse;
-	/* Wat betekent colum-reverse? */
+	flex-direction:column;
   	justify-content:flex-end;
 	/* padding:1.5em 1.5em 0; */
 }
@@ -892,9 +891,6 @@ main{
 /* FOOTER*/
 /*********************/
 footer{
-	/* grid-template-columns: 1fr 1fr 1fr; */
-	/* grid-template-columns: repeat( auto-fit, minmax(min(20em, 100%), 1fr) );
-	gap:var(--default-gap); */
 	display: grid;
 	grid-template-columns: 40vw 15vw 15vw 15vw 15vw;
 	grid-template-rows: 60vh 10vh;
@@ -1884,11 +1880,15 @@ a:active {
 }
 
 .easterEgg h2 {
-	padding: 1em;
+	padding: 2em 1em 1em 1em;
 	font-weight: 700;
+
+	color: var(--color-text-second);
 }
 .easterEgg p {
-	padding: 1em;
+	padding:0.5em 1em 0.5em 1em;
+
+	color: var(--color-text-second);
 }
 
 .easterEgg img {
@@ -2283,25 +2283,6 @@ main > img {
 grid-template-columns: 1fr max-content;*/
 /* gap:var(--tmplt-size-whitespace); */
 /*Hoezo is grid niet nodig voor de header?*/
-
-/* Om een svg afbeelding van kleur te veranderen */
-/* header button svg {
-	padding:.5em;
-  
-	icon en tekst met gap-je naast elkaar
-	display:flex;
-	align-items:center;
-	gap:.25em;
-	
-	standaard styling aanpassen
-	appearance:none;
-	background-color:var(--color-second);
-	border:none;
-	border-radius:.25em; 
-	font:inherit;
-	text-align:center;
-	color:var(--button-color);
-} */
 
 /* Logo/naam te laten "bewegen" */
 /* header > a:hover{ */
