@@ -94,9 +94,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   </summary>
 
   <summary>
-  Verder kregen we kort uitleg over media query, dit is een tool om de workflow te verbeteren. Bijvoorbeeld: 
+  Verder kregen we kort uitleg over media query, dit is een tool om de workflow te verbeteren. 
 
-  <img src="readme-images/media-query.png" width="375px" alt="Anatomie van een media query">
+  Bijvoorbeeld: <img src="readme-images/media-query.png" width="375px" alt="Anatomie van een media query">
 
   Als de media width groter wordt dan 48em dan komen de paragrafen in 2 kolommen te staan.
   </summary>
@@ -124,9 +124,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -	Je kunt met KO niet makkelijk naar een bepaald kopje, want dat moet je alle andere inhoudselementen met dezelfde functie langsgaan.
   -	De VO en KO laten geen paragrafen (p) zien.
 
-
-  ### Web Content Accessibilty Guidelines (WCAG)
-  Moet nog tekst komen.
 </details> 
 
 
@@ -200,7 +197,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>
   Search bar in de header geplaatst.
   <img src="readme-images/header-nav1.png" width="375px" alt="Search bar">
-  (Bron: https://www.youtube.com/watch?v=9hnJsNIBq1g)
+  (Bron: 4)
 
   Main inhoud, waar ik van een image en tekst één link heb kunnen maken.
   <img src="readme-images/main-populair1.png" width="375px" alt="Stukje code main over het kopje populair.">
@@ -210,6 +207,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Allereerste footer inhoud. Niet veel, alleen kopjes. Blijkbaar twijfelde ik nog over hoe ik de links erin moest zetten.
   <img src="readme-images/footer1.png" width="375px" alt="Footer inhoud.">
+
   </summary>
 </details>
 
@@ -223,19 +221,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Door middel van document object model (DOM) refereer je naar het html-element. En om de CSS erbij te betrekken doe je dat met de document.querySelector in de JS, die selecteert het overeenkomende element uit de CSS. Daarnaast kun je met de add.Eventlistener een functie laten uitvoeren. Als laatst kun je dit controleren in de console van een browser, die kijkt voor eventuele fouten. Voorbeeld:
 
   <img src="readme-images/js.jpg" width="375px" alt="Uitleg over JavaScript">
-  Bron: https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
+  (Bron: 1)
   </summary>
 
   ### Wat ik heb gedaan
   <summary>
   Na dat ik de eerste HTML pagina helemaal inhoud heb gegeven kon ik een begin maken met de CSS. Echter had ik deze week niet heel veel gedaan.
 
-  Eerste CSS voor de header en main:
+  Eerste CSS voor de header:
   <img src="readme-images/css-header1.png" width="375px" alt="Eerste styling van de header.">
 
-  <img src="readme-images/css-main1.png" width="375px" alt="Eerste styling van de main.">
-
-  Waar ik voornamelijk vastliep hoe de grid kon toe passen op verschilldende schermbreedte. Eigenlijk dat het responisve werd. Daarnaast vond ik het lastig om uüberhaupt op de juiste elementen te komen.
+  Waar ik voornamelijk vastliep hoe de grid kon toe passen op verschilldende schermbreedte. Eigenlijk dat het responisve werd. Daarnaast vond ik het lastig om überhaupt op de juiste elementen te komen.
   </summary>
 </details>
 
@@ -244,13 +240,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Week 5 - Positioneren + Voortgang 2
 
 <details open>
-  <summary>Deze les ging over positioneren. Met positioneren wil je een element op een specifieke plek in een parent of in een scherm zetten. Er zijn 5 flavours of position:
+  <summary>
+  Deze les ging over positioneren. Met positioneren wil je een element op een specifieke plek in een parent of in een scherm zetten. Er zijn 5 flavours of position:
 
   -	Position: static
-    De standaard waarde voor positioneren en wordt gebaseerd op de plaats in de html door top, right, bottom, left. Ook wel flow lay-out genoemd.
+    De standaard waarde voor positioneren en wordt gebaseerd op de plaats in de HTML door top, right, bottom, left. Ook wel flow lay-out genoemd.
   -	Position: relative
     Behoudt een element in de flow.
   -	Position: absolute
+    Het element gaat uit de flow, waardoor je elementen los kunt positioneren.
+  - Position: fixed
+    Het element gaat uit de flow, maar het blijft wel op een vaste plek staan als je scrollt.
+  - Position: sticky
+    Behoudt een element in de flow. En als het element uit beeld schuift blijft die plakken
+
+    ### Wat ik heb gedaan
+    Deze week vooral bezig geweest met het stylen van de hele pagina, met name de navigatie. Ook geleerd hoe je items alleen voor de screenreader kan laten lezen. 
+
+    Sreenreader only:
+    <img src="readme-images/sr-only.png" width="375px" alt="CSS voor screenreader only.">
+    (Bron: 2)
+
+    CSS voor de main:
+    <img src="readme-images/css-main1.png" width="375px" alt="Eerste styling van de main.">
   </summary>
 </details>
 
@@ -258,30 +270,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2
 
 <details open>
-  <summary></summary>
+  <summary>
+  Tijdens het voortgangsgesprek was mijn HTML in principe op orde tot zo ver, tenminste het zag er goed uit. Verder moest ik vooral de oefeningen erbij pakken en verder aan de slag met stylen.
+  
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De HTML van eerste pagina redelijk op orde. Nu een kwestie van ertoe aanzetten, maar dat vond ik best moeilijk.
+  Wat ik moeilijk vond was dat als je uitleg opzoekte het vaak met elementen werd uitgelegd, zoals divs, die je niet mag gebruiken, dus dan loop je snel vast en wist ik gewoon niet welk element ik dan kon gebruiken. Heel erg zoekend dus.
 
+  Uiteindelijk ben ik stap voor stap vanuit de oefeningen bepaalde onderdelen gaan stylen. Hieronder is oude code te zien, niet dat het verkeerd was. Later is het allemaal aangepast om wat overzichtelijker en specifieker te kunnen stylen.
+ 
+  CSS header:
+  <img src="readme-images/css-header2.png" width="375px" alt="Styling van de header.">
+  
+  CSS zoek fomulier:
+  <img src="readme-images/css-zoekform2.png" width="375px" alt="Styling van het zoek formulier.">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  CSS navigatie:
+  <img src="readme-images/css-nav2.png" width="375px" alt="Styling van de navigatie.">
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-</details>
+  (Bron: Flexbox oefening 2) 
+  </summary>
 
 
 
@@ -289,6 +298,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>
+  Voor de opdracht moet er een animatie in komen, dus hebben we kort uitleg gekregen hoe je zo'n animatie maakt. Verder aan de website gewerkt in de les. 
+
+  <img src="readme-images/anatomie-animatie.png" width="375px" alt="Anatomie van een animatie.">
   </summary>
 </details>
 
@@ -298,6 +310,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>
+    Als je nadenkt over de states, dan denk je na over welke styling correct is voor het element waarvoor het gebruikt moet worden. 
+    Dus een link moet eruit zien als een link, een button als een button en zo door.
   </summary>
 </details>
 
@@ -305,30 +319,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 3
 
 <details open>
-  <summary></summary>
+  <summary>
+  Voor deze week is er niet mega veel veranderd aan het proces. Alles wat ik tot noe toe had was niet verkeerd, maar de manier van stylen had ik erg moeilijk voor mezelf gemaakt. Als goude tip dat ik kreeg moest ik per section gaan stylen. Het werkt veel makkelijker omdat je specifieker elementen kunt benoemen.
+
+  Kortom, de code omgooien en nog concreter voor jezelf maken.
+  </summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  Tijdens de kerstvakantie vond ik het erg lastig om aan het vak Frontend Developemnt te zitten. Ook omdat het even een chaos was geworden en ik niet wist waar ik weer moest beginnen, dit kwam uiteraard doordat ik niet altijd met section werkte. Overigens had ik dat niet gebruikt, omdat ik dacht dat er geen classes gebruikt mocht worden, maar daarvoor dus wel.
 </details>
 
 
@@ -337,6 +335,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>
+  Deze week heb ik buiten de lessen om flink aan de opdracht gewerkt. De header en de footer heb ik helemaal opnieuw gemaakt, omdat het oude gewoon niet meer duidelijk was om vanuit verder uit te werken, het was zeker niet verkeerd, maar het was gewoon chaos.
+
+  Daarnaast zoveel mogelijk "af" proberen te krijgen om de tweede toegankelijkheidstest te doen.
   </summary>
 </details>
 
@@ -344,10 +345,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 2/2
 
 <details open>
-  <summary></summary>
+  <summary>
+  De toegankelijkheid van de website heb ik  net zoals vorige keer getest met de functie voice over (VO) en keyboard only (KO). Daarnaast is 
+  er de Web Content Accessibility Guidelines (WCAG) dit is een document met richtlijnen om te voldoen aan de toegankelijkheid van een 
+  website. Echter als deze richtlijnen allemaal zijn behaald betekent het nog steeds niet dat je website volledig toegankelijk is, de 
+  gebruiker speelt ook nog een essentiële rol.
+  </summary>
+
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  -	Bij bepaalde elementen werden de titels/benaming herhaaldelijk genoemd, kwam omdat ik het dus dubbel of hetzelfde had genoemd.
+  - Met de KO kom ik overal langs.
+  - VO en KO wordt in het Nederlands gegeven, maar met een Engels accent. Opzich wel te volgen.
+  - De eerste link begint ook bij de H1. Bij de echte webiste was dat niet zo, daar werd de titel overgeslagen.
+  - De VO benoemd alle links met titel/beschrijving.
+  - Omdat de H3 in een link ook zit, gaat de KO ook langs alle links.
 
 </details>
 
@@ -355,23 +367,65 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Week 9 - Eindgesprek
 
-<details opens>
-  <summary></summary>
+<details open>
+  <summary>
+    Hoe ik frontend development heb ervaren? Als 1 grote puzzel. 
+
+    De theorie werd goed uitgelegd tijdens de lessen. De oefingen waren zeker handig! En uiteindelijk begreep ik de stof, maar het kwam allemaal zo snel. Dan ben je net bezig met iets en dan krijg je weer nieuwe stof erbij voor wat je later pas nodig hebt. Hierdoor "vergat" je weer wat er eigenlijk nog moest gebeuren. Gelukkig was de stof allemaal makkelijk terug te vinden.
+
+    Omdat ik voor me idee wel echt van nul begon was sowieso het op starten een ding. Dat je bij de eerste regel die je moet schrijven al dacht: "Ja wat moet er komen?" Dit duurde dus en was niet heel efficiënt werken. Telkens een beetje zoekend geweest.
+
+    Uiteindelijk gedaan wat ik kon doen. Veel nieuwe dingen geleerd. Met name de handigheid, gewoon de omgang met alles wat met visual code, het schrijven van de code te maken heeft. 
+    
+    Wat ik nu anders had willen doen?
+    De aanpak van het maken van deze opdracht. Veel tijd verloren onderzoeken, hoe, wat en waar. Ook goed vakantie gehouden, maar voor wat ik heb ben ik tevreden. Al beter dan eerst.
+  </summary>
+
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  De home pagina:
+  <img src="readme-images/ticketmaster-homescreen.jpg" width="375px" alt="uitkomst eerste pagina">
+
+  De artiesten pagina:
+  <img src="readme-images/artiest-pagina.png" width="375px" alt="uitkomst tweede pagina">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd om met media query te werken, om responsiveness toe te passen.
+  <img src="readme-images/media-query450.png" width="375px" alt="Media query">
+  Als het scherm 450px breed is dan veranderd bijvoorbeeld de footer van diplay:grid naar display:flex;.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb beter idee gekregen hoe een grid werkt.
+  <img src="readme-images/css-footer-grid.png" width="375px" alt="Grid in de footer">
+  Om een item juist te plaatsen in een grid geef je dat aan doormiddel van een grid-template-columns en grid-template-rows verhoudingen en daarna geef je per item aan in welke grid-column en grid-row die moet zitten.
+
+  Meer handigheid gekregen in de manier van code lezen, opzoeken, terug te vinden en aanpassen. Namelijk dat je vanuit het inspecteren heel gemakkelijke en element kunt vinden en zelfs ter plaatse kunt aanpassen, waardoor daarna in je code kunt wijzigen. Verder bepaalde shortcuts geleerd.
+
+  Ik heb geleerd hoe je een hamburger menu kunt maken met onder andere JavasScript.
+  <img src="readme-images/js-hamburger2.png" width="375px" alt="JavaScript voor hamburger">
+
+  De hover functie leren kennen. Handig om bepaalde items te laten opvallen.
+  <img src="readme-images/css-header-hover.png" width="375px" alt="Toepassen hover">
+
+  Iets geleerd over de scroll functie.
+  <img src="readme-images/scroll-functie.png" width="375px" alt="Toepassen scroll bar.">
+
+  Geleerd hoe een animatie werkt.
+  <img src="readme-images/css-animatie.png" width="375px" alt="CSS animatie">
+  (Bron 3, voor achtergrond)
+  <img src="readme-images/js-animatie.png" width="375px" alt="JS animatie">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ondanks dat de hover bij sommige elementen wel werkte, is het niet bij alle elementen gelukt. 
+  <img src="readme-images/poging-hover.png" width="375px" alt="Poging hover over een afbeelding">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ook bij de recent-events hoorde er nog afbeeldingen bij, maar dat lukte niet.
+   <img src="readme-images/poging-plaatjes.png" width="375px" alt="Poging afbeldingen bij recent events.">
+
+  In de laatste week heb ik een poging gedaan om de tweede pagina te maken. Bijna de volledige inhoud staat er in, maar niet alles gestyld zoals het hoort qua uitstraling.
+  
 </details>
 
 
@@ -381,12 +435,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+  1. Bron 1: Coyier, C. (2016, November 25). #150: Hey designers, if you only know one thing about JavaScript, this is what I would recommend | CSS-Tricks. CSS-Tricks. https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
+  2. Bron 2: Coyier, C. (2021, February 23). Inclusively hidden | CSS-Tricks. CSS-Tricks. https://css-tricks.com/inclusively-hidden/
+  3. Bron 3: CSS Gradient — generator, maker, and background. (n.d.). CSS Gradient. https://cssgradient.io/
+  4. Bron 4: GreatStack. (2022, January 28). How To Make A Search Bar Using HTML And CSS In 10 Just Minutes [Video]. YouTube. https://www.youtube.com/watch?v=9hnJsNIBq1g
+  5. Bron 5: How to Add an HTML Button that Acts Like a Link. (n.d.). https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  Verder veel gebruik gemaakt van de oefingen uit codepen.
 </details>
